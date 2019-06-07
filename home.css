@@ -1,0 +1,63 @@
+#hib-home-top {
+    max-width: 960px;
+    margin-bottom: 144px;
+}
+
+#hib-home-top-image {
+    height: 300px;
+    background: lightgrey;
+}
+
+#hib-home-top-text {
+    position: relative;
+    text-align: right;
+}
+
+#hib-home-use_cases {
+    max-width: 960px;
+    text-align: center;
+    margin-bottom: 144px;
+}
+
+#hib-home-use_cases h1 {
+    margin-bottom: 30px;
+}
+
+#hib-home-our_products {
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 144px;
+}
+
+#hib-home-our_products h1 {
+    margin-bottom: 30px;
+}
+
+#hib-home-our_products div {
+    margin-bottom: 10px;
+}
+
+#hib-home-our_products-left div,
+#hib-home-our_products-right div {
+    background-color: lightgrey;
+    margin-bottom: 20px;
+    height: 200px;
+}
+
+#hib-home-bottom {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 144px;
+}
+
+#hib-home-bottom-buttons button {
+    width: 140px;
+}
+
+#hib-home-bottom-text {
+    margin-bottom: 20px;
+}
+
+#hib-home-bottom-buttons :first-child {
+    margin-right: 20px;
+}

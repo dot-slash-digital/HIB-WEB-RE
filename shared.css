@@ -1,0 +1,50 @@
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+#hib-header {
+	background-color: darkslategrey;
+}
+
+#hib-nav {
+	padding: 32px 20px;
+	max-width: 960px;
+    margin: 0 auto;
+}
+
+.navbar-nav {
+    position: absolute;
+    right: 20px;
+}
+
+.navbar-nav :not(:last-child) {
+	margin-right: 20px;
+}
+
+.hib-container {
+	margin-top: 200px;
+}
+
+.hib-container div {
+	margin: 0 auto;
+}
+
+#hib-footer-container {
+	background-color: darkslategrey;
+}
+
+#hib-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0px;
+    color: white;
+}
+
+#hib-footer-center {
+    text-align: center;
+}
+
+#hib-footer-right {
+    text-align: right;
+}
