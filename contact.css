@@ -1,0 +1,39 @@
+#hib-contact-up-top {
+    max-width: 960px;
+    margin-bottom: 144px;
+}
+
+#hib-contact-top-container {
+    position: relative;
+    text-align: right;
+}
+
+#hib-contact-us-about {
+    max-width: 960px;
+    text-align: center;
+    margin-bottom: 144px;
+}
+
+#hib-contact-us-buttons {
+    max-width: 900px;
+    text-align: center;
+    margin-bottom: 144px;
+}
+
+#hib-contact-submit{
+  padding-top: 20px
+}
+
+#hib-input-forms {
+    max-width: 600px;
+    margin-bottom: 144px;
+}
+
+#hib-form-input{
+  display:flex;
+}
+
+#hib-form-input-padding-page-two {
+  padding-bottom: 50px;
+
+}
