@@ -1,0 +1,59 @@
+.hib-container {
+	margin-top: 100px !important;
+	padding: 0px;
+}
+
+#hib-products-top {
+    margin-bottom: 144px;
+    text-align: center;
+    height: 400px;
+    background: lightgrey;
+}
+
+#hib-products-top h1 {
+	position:relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#hib-products-descriptions {
+	max-width: 960px;
+	text-align: center;
+	margin-bottom: 144px;
+}
+
+.hib-products-descriptions-image {
+	background-color: lightgrey;
+	margin: 50px;
+	height: 200px;
+}
+
+#hib-products-descriptions h3 {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+
+.hib-products-descriptions-tabs-content {
+	background-color: lightgrey;
+	padding: 10px 20px;
+	text-align: left;
+	height: 100px;
+}
+
+#hib-products-bottom {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 144px;
+}
+
+#hib-products-bottom-buttons button {
+    width: 140px;
+}
+
+#hib-products-bottom-text {
+    margin-bottom: 20px;
+}
+
+#hib-products-bottom-buttons :first-child {
+    margin-right: 20px;
+}
