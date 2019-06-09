@@ -3,19 +3,50 @@
 	margin: 0px;
 }
 
+h1 {
+  /* color:#750827; */
+	color: #9B0926;
+}
+
+body {
+	color:#B15160;
+}
+
+a:hover {
+  color:#B15160;
+}
+/*
+a:hover {
+  background-color: #750827;
+} */
+
 #hib-header {
-	background-color: darkslategrey;
+	/* background-color: #a93e4f; */
+	/* background-color: #B15160; */
+	/* background-color: #F7EDEF; */
+	background-color: #FBF7F8;
+
+}
+
+#hib-all-style{
+		background-color: #FBF7F8;
+	/* background-color: #F7EDEF; */
 }
 
 #hib-nav {
 	padding: 32px 20px;
 	max-width: 960px;
     margin: 0 auto;
+
 }
 
 .navbar-nav {
     position: absolute;
     right: 20px;
+}
+
+.nav-link active{
+	color: #B15160;
 }
 
 .navbar-nav :not(:last-child) {
