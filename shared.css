@@ -15,21 +15,36 @@ body {
 a:hover {
   color:#B15160;
 }
-/*
-a:hover {
-  background-color: #750827;
-} */
 
 #hib-header {
-	/* background-color: #a93e4f; */
-	/* background-color: #B15160; */
-	/* background-color: #F7EDEF; */
-	background-color: #FBF7F8;
+	background-color: #FFFFFF;
 
 }
 
+.btn-primary{
+	background-color:#B15160;
+	border: 2px solid #9B0926;
+	color: #FFFFFF;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+  background-color: #9B0926;
+	border: 2px solid #9B0926;
+  color: #FFFFFF;
+}
+
+
+
+.btn-primary:active
+{
+	background-color: #9B0926 !important;
+	border: 2px solid #9B0926 !important;
+  color: #FFFFFF !important;
+}
+
+
 #hib-all-style{
-		background-color: #FBF7F8;
+		background-color: #FFFFFF;
 	/* background-color: #F7EDEF; */
 }
 
