@@ -16,6 +16,20 @@ a:hover {
   color:#B15160;
 }
 
+a:link {
+  color: #FFFFFF;
+}
+
+/* visited link */
+a:visited {
+  color: #FFFFFF;
+}
+
+/* selected link */
+a:active {
+  color:#B15160;
+}
+
 .nav-item a:hover {
     color: #B15160 !important;
 }
