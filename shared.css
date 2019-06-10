@@ -16,6 +16,10 @@ a:hover {
   color:#B15160;
 }
 
+.nav-item a:hover {
+    color: #B15160 !important;
+}
+
 #hib-header {
 	background-color: #FFFFFF;
 
