@@ -1,11 +1,18 @@
 * {
 	padding: 0px;
 	margin: 0px;
+	font-family: "Open Sans", sans-serif;
 }
 
 h1 {
   /* color:#750827; */
 	color: #9B0926;
+	font-family: "Noto Sans HK", sans-serif;
+	font-weight: bold;
+}
+
+h4 {
+	font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -32,9 +39,9 @@ a:hover {
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-  background-color: #9B0926;
+	background-color: #9B0926;
 	border: 2px solid #9B0926;
-  color: #FFFFFF;
+	color: #FFFFFF;
 }
 
 
@@ -91,8 +98,14 @@ a:hover {
     color: white;
 }
 
+#hib-footer-left div,
+#hib-footer-center div,
+#hib-footer-right div {
+	width: 100%;
+}
+
 #hib-footer-center {
-    text-align: center;
+	text-align: center;
 }
 
 #hib-footer-right {

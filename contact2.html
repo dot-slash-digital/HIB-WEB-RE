@@ -6,6 +6,10 @@
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
 		<link rel="stylesheet" type="text/css" href="shared.css">
 		<link rel="stylesheet" type="text/css" href="contact.css">
 	</head>
@@ -15,7 +19,7 @@
 			<nav id="hib-nav" class="navbar navbar-expand-md navbar-dark">
 
 				<!-- <a class="navbar-brand" style="color:#750827" href="#">(company logo)</a> -->
-				<img src="PhytoHib_2000px.png" width="256.4" height="100"> </img>
+				<img src="PhytoHib_small.png" width="256.4" height="100"> </img>
 
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
 					<span class="navbar-toggler-icon"></span>
@@ -38,15 +42,10 @@
 		</header>
 
 		<div id="hib-contact-us" class="container-fluid hib-container">
-			<div class="row">
-				<div id="hib-contact-up-top" class="col">
-					<div class="row">
-						<div class="col-lg-4 d-flex align-items-center">
-							<div id="hib-contact-top-container">
-								<h1>Contact Us</h1>
-
-							</div>
-						</div>
+			<div class="row ">
+				<div id="hib-contact-up-top" class="col d-flex align-items-center">
+					<div>
+						<h1>Contact Us</h1>
 					</div>
 				</div>
 			</div>
@@ -54,7 +53,6 @@
 			<div class="row">
 				<div id="hib-contact-us-about" class="col">
 					<h4>Here is some text about contacting us. <br> you can through these two methods <br> more words if needed</h4>
-
 				</div>
 
 			</div>
@@ -66,85 +64,89 @@
 				</div>
 			</div>
 
-<!--There are more types of input than just text -->
 			<div class="row">
 				<div id="hib-input-forms" class="col">
 					<form>
-  					<div class="form-row">
-    					<div class="form-group col-md-6">
-					    	<label for="fullName" class"hib-form-input">Full Name</label>
-					    	<input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="Enter Full Name">
+	  					<div class="form-row" id="form-row-1">
+	    					<div class="form-group col-md-6">
+								<label for="fullName" class="hib-form-input">Full Name*</label>
+								<input type="text" class="form-control hib-form-input-required" id="fullName" aria-describedby="fullNameHelp">
 							</div>
 							<div class="form-group col-md-6">
-					      <label for="Company"  class"hib-form-input">Company</label>
-					      <input type="text" class="form-control" id="Company" placeholder="Enter Company">
-					    </div>
+								<label for="Company"  class="hib-form-input">Company*</label>
+								<input type="text" class="form-control hib-form-input-required" id="Company">
+						    </div>
 						</div>
-						<div class="form-row" style="padding-bottom:50px">
+						<div class="form-row" id="form-row-2">
 							<div class="form-group col-md-6">
-								<label for="phoneNumber" class"hib-form-input">Phone Number</label>
-								<input type="text" class="form-control" id="phoneNumber" aria-describedby="phoneNumberHelp" placeholder="Enter Phone Number">
+								<label for="phoneNumber" class="hib-form-input">Phone Number*</label>
+								<input type="text" class="form-control hib-form-input-required" id="phoneNumber" aria-describedby="phoneNumberHelp">
 							</div>
 							<div class="form-group col-md-6">
-								<label for="emailAddress"  class"hib-form-input">Email Address</label>
-								<input type="text" class="form-control" id="emailAddress" placeholder="Enter Email Address">
+								<label for="emailAddress"  class="hib-form-input">Email Address*</label>
+								<input type="text" class="form-control hib-form-input-required" id="emailAddress">
 							</div>
 						</div>
 					</form>
 
 					<form>
-						<div class="form-row">
-							<div class="form-group col-md-6">
-								<label for="shippingAddress" class"hib-form-input">Shipping Address Line 1</label>
-								<input type="text" class="form-control" id="shippingAddress" aria-describedby="shippingAddressHelp" placeholder="Enter shipping address line 1">
-							</div>
-							<div class="form-group col-md-6">
-								<label for="shippingAddress2"  class"hib-form-input">Shipping Address Line 2</label>
-								<input type="text" class="form-control" id="shippingAddress2" placeholder="Enter shipping address line 2">
+						<div class="form-row" id="form-row-3">
+							<div class="form-group col-md">
+								<label for="shippingAddress" class="hib-form-input">Shipping Address Line 1*</label>
+								<input type="text" class="form-control hib-form-input-required" id="shippingAddress" aria-describedby="shippingAddressHelp">
 							</div>
 						</div>
-						<div class="form-row">
-							<div class="form-group col-md-6">
-								<label for="city" class"hib-form-input">City</label>
-								<input type="text" class="form-control" id="city" aria-describedby="cityHelp" placeholder="Enter City">
-							</div>
-							<div class="form-group col-md-6">
-								<label for="state"  class"hib-form-input">State</label>
-								<input type="text" class="form-control" id="state" placeholder="Enter State">
+						<div class="form-row" id="form-row-3">
+							<div class="form-group col-md">
+								<label for="shippingAddress2"  class="hib-form-input">Shipping Address Line 2</label>
+								<input type="text" class="form-control" id="shippingAddress2">
 							</div>
 						</div>
-						<div class="form-row" style="padding-bottom:50px">
+						<div class="form-row" id="form-row-4">
+							<div class="form-group col-md-6">
+								<label for="city" class="hib-form-input">City*</label>
+								<input type="text" class="form-control hib-form-input-required" id="city" aria-describedby="cityHelp">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="state"  class="hib-form-input">State*</label>
+								<input type="text" class="form-control hib-form-input-required" id="state">
+							</div>
+						</div>
+						<div class="form-row" id="form-row-5">
  							<div class="form-group col-md-6">
- 								<label for="zipCode" class"hib-form-input">Zip Code</label>
- 								<input type="text" class="form-control" id="zipCode" aria-describedby="zipCodeHelp" placeholder="Enter Zip Code">
+ 								<label for="zipCode" class="hib-form-input">Zip Code*</label>
+ 								<input type="text" class="form-control hib-form-input-required" id="zipCode" aria-describedby="zipCodeHelp">
  							</div>
  							<div class="form-group col-md-6">
- 								<label for="contry"  class"hib-form-input">Country</label>
- 								<input type="text" class="form-control" id="country" placeholder="Enter Country">
+ 								<label for="contry"  class="hib-form-input">Country*</label>
+ 								<input type="text" class="form-control hib-form-input-required" id="country">
  							</div>
  						</div>
 					</form>
 
 					<form>
+						<div class="form-row" id="form-row-7">
+							<div class="form-group col-md-6">
+								<label for="sampleType" class="hib-form-input">Sample Type*</label>
+								<input type="text" class="form-control hib-form-input-required" id="sampleType" aria-describedby="sampleTypeHelp">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="AppOfSample"  class="hib-form-input">Application of Sample*</label>
+								<input type="text" class="form-control hib-form-input-required" id="AppOfSample">
+							</div>
+						</div>
 						<div class="form-row">
-							<div class="form-group col-md-6">
-								<label for="sampleType" class"hib-form-input">Sample Type</label>
-								<input type="text" class="form-control" id="sampleType" aria-describedby="sampleTypeHelp" placeholder="Enter Sample Type">
-							</div>
-							<div class="form-group col-md-6">
-								<label for="AppOfSample"  class"hib-form-input">Application of Sample</label>
-								<input type="text" class="form-control" id="AppOfSample" placeholder="Enter Application of Sample">
+							<div class="form-group col">
+								<label for="message" class="hib-form-input">Message</label>
+								<textarea type="text" rows="5" class="form-control" id="message"></textarea>
 							</div>
 						</div>
-						<div class="form-group">
-							<label for="message" class"hib-form-input">Message</label>
-							<input type="text" class="form-control" id="message" placeholder="Enter Message">
-						</div>
-						<div class="text-left" id="hib-contact-submit">
-							<button type="button" class="btn btn-primary" >Submit</button>
+						<div class="form-row">
+							<div class="text-left col" id="hib-contact-submit">
+								<button type="button" id="hib-contact-submit-button2" class="btn btn-primary disabled">Submit</button>
+							</div>
 						</div>
 					</form>
-
 				</div>
 			</div>
 
@@ -153,19 +155,27 @@
 		<div id="hib-footer-container" class="container-fluid">
 			<div id="hib-footer">
 				<div class="row">
-					<div id="hib-footer-left" class="col-4">
-						&copy; 2019 Hibiscus Products LLC <br>
-						All rights reserved
-						Designed by Dot Slash Digital
+					<div id="hib-footer-left" class="col-4 d-flex align-items-center">
+						<div>
+							&copy; 2019 Hibiscus Products LLC <br>
+							All rights reserved <br>
+							Designed by Dot Slash Digital <br>
+							dotslashdigital.com 
+							(702) 712-2892
+						</div>
 					</div>
-					<div id="hib-footer-center" class="col-4">
-						info@hibiscusproducts.com <br>
-						(702) 123-4567
+					<div id="hib-footer-center" class="col-4 d-flex align-items-center">
+						<div>
+							info@hibiscusproducts.com <br>
+							(702) 123-4567
+						</div>
 					</div>
-					<div id="hib-footer-right" class="col-4">
-						Address <br>
-						City, State, Zip <br>
-						Country
+					<div id="hib-footer-right" class="col-4 d-flex align-items-center">
+						<div>
+							Address <br>
+							City, State, Zip <br>
+							Country
+						</div>
 					</div>
 				</div>
 			</div>
@@ -174,6 +184,8 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<script src="contact2.js"></script>
 	</body>
 
 </html>

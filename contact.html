@@ -6,6 +6,10 @@
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
+		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
 		<link rel="stylesheet" type="text/css" href="shared.css">
 		<link rel="stylesheet" type="text/css" href="contact.css">
 	</head>
@@ -14,8 +18,7 @@
 			<header id="hib-header" class="fixed-top">
 				<nav id="hib-nav" class="navbar navbar-expand-md navbar-dark">
 
-					<!-- <a class="navbar-brand" style="color:#750827" href="#">(company logo)</a> -->
-					<img src="PhytoHib_2000px.png" width="256.4" height="100"> </img>
+					<img src="PhytoHib_small.png" width="256.4" height="100"> </img>
 
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
 						<span class="navbar-toggler-icon"></span>
@@ -38,15 +41,10 @@
 			</header>
 
 		<div id="hib-contact-us" class="container-fluid hib-container">
-			<div class="row">
-				<div id="hib-contact-up-top" class="col">
-					<div class="row">
-						<div class="col-lg-4 d-flex align-items-center">
-							<div id="hib-contact-top-container">
-								<h1>Contact Us</h1>
-
-							</div>
-						</div>
+			<div class="row ">
+				<div id="hib-contact-up-top" class="col d-flex align-items-center">
+					<div>
+						<h1>Contact Us</h1>
 					</div>
 				</div>
 			</div>
@@ -70,35 +68,36 @@
 			<div class="row">
 				<div id="hib-input-forms" class="col">
 					<form>
-  					<div class="form-row">
-    					<div class="form-group col-md-6">
-					    	<label for="fullName" class="hib-form-input">Full Name</label>
-					    	<input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp" placeholder="Enter Full Name">
+  						<div class="form-row" id="form-row-8">
+    						<div class="form-group col-md-6">
+								<label for="fullName" class="hib-form-input">Full Name*</label>
+								<input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp">
 							</div>
 							<div class="form-group col-md-6">
-					      <label for="Company"  class="hib-form-input">Company</label>
-					      <input type="text" class="form-control" id="Company" placeholder="Enter Company">
-					    </div>
-						</div>
-						<div class="form-row">
-							<div class="form-group col-md-6">
-								<label for="phoneNumber" class="hib-form-input">Phone Number</label>
-								<input type="text" class="form-control" id="phoneNumber" aria-describedby="phoneNumberHelp" placeholder="Enter Phone Number">
-							</div>
-							<div class="form-group col-md-6">
-								<label for="emailAddress"  class="hib-form-input">Email Address</label>
-								<input type="text" class="form-control" id="emailAddress" placeholder="Enter Email Address">
+								<label for="Company"  class="hib-form-input">Company*</label>
+								<input type="text" class="form-control" id="Company">
 							</div>
 						</div>
-						<div class="form-group">
-					    <label for="message" class="hib-form-input">Message</label>
-					    <input type="text" class="form-control" id="message" placeholder="Enter Message">
-					  </div>
+						<div class="form-row" id="form-row-9">
+							<div class="form-group col-md-6">
+								<label for="phoneNumber" class="hib-form-input">Phone Number*</label>
+								<input type="text" class="form-control" id="phoneNumber" aria-describedby="phoneNumberHelp">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="emailAddress"  class="hib-form-input">Email Address*</label>
+								<input type="text" class="form-control" id="emailAddress">
+							</div>
+						</div>
+						<div class="form-row" id="form-row-10">
+							<div class="form-group col">
+								<label for="message" class="hib-form-input">Message</label>
+								<textarea type="text" class="form-control" id="message" rows="5"></textarea>
+							</div>
+						</div>
 						<div class="text-left" id="hib-contact-submit">
-							<button type="button" class="btn btn-primary" >Submit</button>
+							<button type="button" id="hib-contact-submit-button" class="btn btn-primary disabled" >Submit</button>
 						</div>
 					</form>
-
 				</div>
 			</div>
 
@@ -107,19 +106,27 @@
 		<div id="hib-footer-container" class="container-fluid">
 			<div id="hib-footer">
 				<div class="row">
-					<div id="hib-footer-left" class="col-4">
-						&copy; 2019 Hibiscus Products LLC <br>
-						All rights reserved
-						Designed by Dot Slash Digital
+					<div id="hib-footer-left" class="col-4 d-flex align-items-center">
+						<div>
+							&copy; 2019 Hibiscus Products LLC <br>
+							All rights reserved <br>
+							Designed by Dot Slash Digital <br>
+							dotslashdigital.com 
+							(702) 712-2892
+						</div>
 					</div>
-					<div id="hib-footer-center" class="col-4">
-						info@hibiscusproducts.com <br>
-						(702) 123-4567
+					<div id="hib-footer-center" class="col-4 d-flex align-items-center">
+						<div>
+							info@hibiscusproducts.com <br>
+							(702) 123-4567
+						</div>
 					</div>
-					<div id="hib-footer-right" class="col-4">
-						Address <br>
-						City, State, Zip <br>
-						Country
+					<div id="hib-footer-right" class="col-4 d-flex align-items-center">
+						<div>
+							Address <br>
+							City, State, Zip <br>
+							Country
+						</div>
 					</div>
 				</div>
 			</div>
@@ -128,6 +135,8 @@
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+		<script src="contact.js"></script>
 	</body>
 
 </html>
