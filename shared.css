@@ -23,6 +23,20 @@ a:hover {
   color:#B15160;
 }
 
+a:link {
+  color: #FFFFFF;
+}
+
+/* visited link */
+a:visited {
+  color: #FFFFFF;
+}
+
+/* selected link */
+a:active {
+  color:#B15160;
+}
+
 .nav-item a:hover {
     color: #B15160 !important;
 }
@@ -32,10 +46,15 @@ a:hover {
 
 }
 
+#hib-home-bottom-buttons button {
+	width: 175px !important;
+}
+
 .btn-primary{
 	background-color:#B15160;
 	border: 2px solid #9B0926;
 	color: #FFFFFF;
+	width: 175px;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
@@ -52,7 +71,6 @@ a:hover {
 	border: 2px solid #9B0926 !important;
   color: #FFFFFF !important;
 }
-
 
 #hib-all-style{
 		background-color: #FFFFFF;

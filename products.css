@@ -19,6 +19,10 @@ h1 {
 	transform: translateY(-50%);
 }
 
+#hib-products-bottom-buttons button {
+	width: 175px !important;
+}
+
 #hib-products-descriptions {
 	max-width: 960px;
 	text-align: center;
