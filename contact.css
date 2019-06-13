@@ -20,16 +20,29 @@ h1 {
 }
 
 #hib-contact-us-buttons {
-    max-width: 900px;
     text-align: center;
     margin-bottom: 144px;
+    flex-grow: 0;
 }
 
 #hib-contact-submit{
   padding-top: 20px
 }
 
-#hib-input-forms {
+#hib-inquiry-form-outer {
+    display: block;
+}
+
+#hib-request-form-outer {
+    display: none;
+}
+
+#hib-inquiry-form {
+    max-width: 600px;
+    margin-bottom: 144px;
+}
+
+#hib-request-form {
     max-width: 600px;
     margin-bottom: 144px;
 }
@@ -61,4 +74,29 @@ h1 {
 .btn.btn-primary.disabled {
     background-color: grey;
     border: 2px solid grey;
+}
+
+.btn-contact-toggle {
+    background-color: #B15160;
+    border: 2px solid #9B0926;
+    color: #FFFFFF;
+    width: 175px;
+}
+
+.btn-contact-toggle:hover {
+    background-color: #A2203A;
+    color: #FFFFFF;
+}
+
+.btn-contact-toggle.active {
+    background-color: #9B0926;
+}
+
+.btn-contact-toggle:not(.active) {
+    cursor: pointer;
+}
+
+.btn-contact-toggle.focus {
+    outline: none;
+    box-shadow: none;
 }

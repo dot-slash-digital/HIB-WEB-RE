@@ -17,7 +17,9 @@
 	<body id="hib-all-style">
 			<header id="hib-header" class="fixed-top">
 				<nav id="hib-nav" class="navbar navbar-expand-md navbar-dark">
-					<a href="index.html">	<img src="PhytoHib_small.png" width="256.4" height="100"> </img> </a>
+					<a href="index.html">
+                        <img src="PhytoHib_small.png" width="256.4" height="100">
+                    </a>
 
 					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
 						<span class="navbar-toggler-icon"></span>
@@ -31,7 +33,7 @@
 							<li class="nav-item">
 								<a class="nav-link" href="products.html" style="color: #9B0926;">Products</a>
 							</li>
-		<li class="nav-item">
+                            <li class="nav-item">
 								<a class="nav-link" href="contact.html" style="color: #9B0926;">Contact</a>
 							</li>
 						</ul>
@@ -51,39 +53,44 @@
 			<div class="row">
 				<div id="hib-contact-us-about" class="col">
 					<h4>Here is some text about contacting us. <br> you can through these two methods <br> more words if needed</h4>
-
-				</div>
-
-			</div>
-
-			<div class="row">
-				<div id="hib-contact-us-buttons" class="col">
-					<button type="button" class="btn btn-primary">General Inquiry</button>
-					<a href="contact2.html"><button type="button" class="btn btn-primary">Sample Request</button></a>
 				</div>
 			</div>
 
-<!--There are more types of input than just text -->
 			<div class="row">
-				<div id="hib-input-forms" class="col">
+				<div id="hib-contact-us-buttons" class="col btn-group btn-group-toggle" data-toggle="buttons">
+                    <label id="toggle-inquiry" class="btn btn-contact-toggle active">
+                        <input type="radio" name="options" id="hib-contact-us-inquiry-btn" checked> General Inquiry
+                    </label>
+                    <label id="toggle-request" class="btn btn-contact-toggle">
+                        <input type="radio" name="options" id="hib-contact-us-request-btn"> Sample Requests
+                    </label>
+				</div>
+			</div>
+            
+            <div class="row">
+                
+            </div>
+
+			<div id="hib-inquiry-form-outer" class="row">
+				<div id="hib-inquiry-form" class="col">
 					<form>
   						<div class="form-row" id="form-row-8">
     						<div class="form-group col-md-6">
-								<label for="fullName" class="hib-form-input">Full Name*</label>
+								<label for="fullName" class="hib-form-input">Full Name *</label>
 								<input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp">
 							</div>
 							<div class="form-group col-md-6">
-								<label for="Company"  class="hib-form-input">Company*</label>
+								<label for="Company"  class="hib-form-input">Company *</label>
 								<input type="text" class="form-control" id="Company">
 							</div>
 						</div>
 						<div class="form-row" id="form-row-9">
 							<div class="form-group col-md-6">
-								<label for="phoneNumber" class="hib-form-input">Phone Number*</label>
+								<label for="phoneNumber" class="hib-form-input">Phone Number *</label>
 								<input type="text" class="form-control" id="phoneNumber" aria-describedby="phoneNumberHelp">
 							</div>
 							<div class="form-group col-md-6">
-								<label for="emailAddress"  class="hib-form-input">Email Address*</label>
+								<label for="emailAddress"  class="hib-form-input">Email Address *</label>
 								<input type="text" class="form-control" id="emailAddress">
 							</div>
 						</div>
@@ -95,6 +102,88 @@
 						</div>
 						<div class="text-left" id="hib-contact-submit">
 							<button type="button" id="hib-contact-submit-button" class="btn btn-primary disabled" >Submit</button>
+						</div>
+					</form>
+				</div>
+			</div>
+            
+            <div id="hib-request-form-outer" class="row">
+				<div id="hib-request-form" class="col">
+					<form>
+	  					<div class="form-row" id="form-row-1">
+	    					<div class="form-group col-md-6">
+								<label for="fullName" class="hib-form-input">Full Name *</label>
+								<input type="text" class="form-control hib-form-input-required" id="fullName" aria-describedby="fullNameHelp">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="Company"  class="hib-form-input">Company *</label>
+								<input type="text" class="form-control hib-form-input-required" id="Company">
+						    </div>
+						</div>
+						<div class="form-row" id="form-row-2">
+							<div class="form-group col-md-6">
+								<label for="phoneNumber" class="hib-form-input">Phone Number *</label>
+								<input type="text" class="form-control hib-form-input-required" id="phoneNumber" aria-describedby="phoneNumberHelp">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="emailAddress"  class="hib-form-input">Email Address *</label>
+								<input type="text" class="form-control hib-form-input-required" id="emailAddress">
+							</div>
+						</div>
+                        
+                        <div class="form-row" id="form-row-3">
+							<div class="form-group col-md">
+								<label for="shippingAddress" class="hib-form-input">Shipping Address Line 1 *</label>
+								<input type="text" class="form-control hib-form-input-required" id="shippingAddress" aria-describedby="shippingAddressHelp">
+							</div>
+						</div>
+						<div class="form-row" id="form-row-3">
+							<div class="form-group col-md">
+								<label for="shippingAddress2"  class="hib-form-input">Shipping Address Line 2</label>
+								<input type="text" class="form-control" id="shippingAddress2">
+							</div>
+						</div>
+						<div class="form-row" id="form-row-4">
+							<div class="form-group col-md-6">
+								<label for="city" class="hib-form-input">City *</label>
+								<input type="text" class="form-control hib-form-input-required" id="city" aria-describedby="cityHelp">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="state"  class="hib-form-input">State *</label>
+								<input type="text" class="form-control hib-form-input-required" id="state">
+							</div>
+						</div>
+						<div class="form-row" id="form-row-5">
+ 							<div class="form-group col-md-6">
+ 								<label for="zipCode" class="hib-form-input">Zip Code *</label>
+ 								<input type="text" class="form-control hib-form-input-required" id="zipCode" aria-describedby="zipCodeHelp">
+ 							</div>
+ 							<div class="form-group col-md-6">
+ 								<label for="contry"  class="hib-form-input">Country *</label>
+ 								<input type="text" class="form-control hib-form-input-required" id="country">
+ 							</div>
+ 						</div>
+                        
+                        <div class="form-row" id="form-row-7">
+							<div class="form-group col-md-6">
+								<label for="sampleType" class="hib-form-input">Sample Type *</label>
+								<input type="text" class="form-control hib-form-input-required" id="sampleType" aria-describedby="sampleTypeHelp">
+							</div>
+							<div class="form-group col-md-6">
+								<label for="AppOfSample"  class="hib-form-input">Application of Sample *</label>
+								<input type="text" class="form-control hib-form-input-required" id="AppOfSample">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col">
+								<label for="message" class="hib-form-input">Message</label>
+								<textarea type="text" rows="5" class="form-control" id="message"></textarea>
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="text-left col" id="hib-contact-submit">
+								<button type="button" id="hib-contact-submit-button2" class="btn btn-primary disabled">Submit</button>
+							</div>
 						</div>
 					</form>
 				</div>
@@ -129,7 +218,7 @@
 			</div>
 		</div>
 
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+		<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 

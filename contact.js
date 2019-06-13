@@ -67,3 +67,35 @@ $(document).ready(function() {
 			$(this).removeClass("is-invalid").removeClass("is-valid")
 	})
 });
+
+$("#toggle-inquiry").click(function(e) {
+    e.preventDefault();
+    
+    // request form was visible prior to button click
+    if ($("#toggle-request").hasClass("active")) {
+        // hide request form, display inquiry form
+        $("#hib-inquiry-form-outer").css("display", "block");
+        $("#hib-request-form-outer").css("display", "none");
+    }
+    
+    // Smooth scroll down to top of form
+    $('html, body').animate({
+        scrollTop: $("#hib-inquiry-form-outer").offset().top - $("#hib-header").height()
+    }, 800);
+});
+
+$("#toggle-request").click(function(e) {
+    e.preventDefault();
+    
+    // inquiry form was visible prior to button click
+    if ($("#toggle-inquiry").hasClass("active")) {
+        // hide inquiry form, display request form
+        $("#hib-request-form-outer").css("display", "block");
+        $("#hib-inquiry-form-outer").css("display", "none");
+    }
+    
+    // Smooth scroll down to top of form
+    $('html, body').animate({
+        scrollTop: $("#hib-request-form-outer").offset().top - $("#hib-header").height()
+    }, 800);
+});
