@@ -100,3 +100,7 @@ h1 {
     outline: none;
     box-shadow: none;
 }
+
+#hib-contact-submit-inquiry.disabled, #hib-contact-submit-request.disabled {
+    cursor: not-allowed;
+}
