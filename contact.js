@@ -1,71 +1,58 @@
-$(document).ready(function() {
-	// Check if input is valid on submit
-	$("#hib-contact-submit-button").submit(function(e) {
-		if ($("#hib-contact-submit-button").hasClass("disabled")) {
-			e.preventDefault();
-		}
-	});
+// Submit contact form and error checking
+$("#hib-inquiry-form").submit(function() {
+    // Full Name (required)
+    if ($("#contact-inquiry-full-name").val() == "") {
+        $("#contact-inquiry-full-name").removeClass("is-valid");
+        $("#contact-inquiry-full-name").addClass("is-invalid");
+    } else {
+        $("#contact-inquiry-full-name").removeClass("is-invalid");
+        $("#contact-inquiry-full-name").addClass("is-valid");
+    }
+    
+    // Company (required)
+    if ($("#contact-inquiry-company").val() == "") {
+        $("#contact-inquiry-company").removeClass("is-valid");
+        $("#contact-inquiry-company").addClass("is-invalid");
+    } else {
+        $("#contact-inquiry-company").removeClass("is-invalid");
+        $("#contact-inquiry-company").addClass("is-valid");
+    }
+    
+    // Email Address (required)
+    if ($("#contact-inquiry-email-address").val() == "") {
+        $("#contact-inquiry-email-address").removeClass("is-valid");
+        $("#contact-inquiry-email-address").addClass("is-invalid");
+    } else {
+        $("#contact-inquiry-email-address").removeClass("is-invalid");
+        $("#contact-inquiry-email-address").addClass("is-valid");
+    }
+    
+    // Phone Number (optional)
+    if ($("#contact-inquiry-phone-number").val() == "")
+        $("#contact-inquiry-phone-number").removeClass("is-valid");
+    else
+        $("#contact-inquiry-phone-number").addClass("is-valid");
+    
+    // Message (optional)
+    if ($("#contact-inquiry-message").val() == "")
+        $("#contact-inquiry-message").removeClass("is-valid");
+    else
+        $("#contact-inquiry-message").addClass("is-valid");
+    
+    if ($("#contact-inquiry-full-name").val() != "" && $("#contact-inquiry-company").val() != "" && $("#contact-inquiry-email-address").val() != "")
+        return true;
+    else
+        return false;
+});
 
-	// On submit button click, check if if forms are valid/invalid
-	$("#hib-contact-submit-button").click(function() {
-		if ($("#fullName").val() == "")
-			$("#fullName")
-				.addClass("is-invalid")
-				.removeClass("is-valid")
-		else
-			$("#fullName")
-				.addClass("is-valid")
-				.removeClass("is-invalid")
-
-		if ($("#Company").val() == "")
-			$("#Company")
-				.addClass("is-invalid")
-				.removeClass("is-valid")
-		else
-			$("#Company")
-				.addClass("is-valid")
-				.removeClass("is-invalid");
-
-		if ($("#phoneNumber").val() == "")
-			$("#phoneNumber")
-				.addClass("is-invalid")
-				.removeClass("is-valid")
-		else
-			$("#phoneNumber")
-				.addClass("is-valid")
-				.removeClass("is-invalid");
-
-		if ($("#emailAddress").val() == "")
-			$("#emailAddress")
-				.addClass("is-invalid")
-				.removeClass("is-valid")
-		else
-			$("#emailAddress")
-				.addClass("is-valid")
-				.removeClass("is-invalid");
-	})
-
-	// Check if input is valid on form change and
-	// enable/disable submit button accordingly
-	$(".form-control").not("#message").not("#shippingAddress2").on("input change blur", function() {
-		if ($("#fullName").val() != "" &&
-			$("#Company").val() != "" &&
-			$("#phoneNumber").val() != "" &&
-			$("#emailAddress").val() != "") {
-			$("#hib-contact-submit-button").removeClass("disabled");
-		}
-		else {
-			$("#hib-contact-submit-button").addClass("disabled");
-		}
-	});
-
-	// On form change, add/remove is-invalid class
-	$(".form-control").not("#message").on("input blur", function() {
-		if ($(this).val() == "")
-			$(this).addClass("is-invalid").removeClass("is-valid")
-		else
-			$(this).removeClass("is-invalid").removeClass("is-valid")
-	})
+// Remove form validity classes if a user edits the input
+$("input").on('input', function() {
+    $(this).removeClass("is-valid");
+    $(this).removeClass("is-invalid");
+});
+$("textarea").on('input', function() {
+    $(this).removeClass("is-valid");
+    $(this).removeClass("is-invalid");
 });
 
 $("#toggle-inquiry").click(function(e) {

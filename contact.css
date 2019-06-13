@@ -37,14 +37,10 @@ h1 {
     display: none;
 }
 
-#hib-inquiry-form {
+#hib-inquiry-form, #hib-request-form {
     max-width: 600px;
     margin-bottom: 144px;
-}
-
-#hib-request-form {
-    max-width: 600px;
-    margin-bottom: 144px;
+    margin: 0 auto 144px auto;
 }
 
 #hib-form-input{
@@ -101,6 +97,6 @@ h1 {
     box-shadow: none;
 }
 
-#hib-contact-submit-inquiry.disabled, #hib-contact-submit-request.disabled {
+#hib-contact-inquiry-submit.disabled, #hib-contact-request-submit.disabled {
     cursor: not-allowed;
 }

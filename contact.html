@@ -72,36 +72,36 @@
             </div>
 
 			<div id="hib-inquiry-form-outer" class="row">
-				<div id="hib-inquiry-form" class="col">
-					<form>
+				<div class="col">
+					<form id="hib-inquiry-form">
   						<div class="form-row" id="form-row-8">
     						<div class="form-group col-md-6">
-								<label for="fullName" class="hib-form-input">Full Name *</label>
-								<input type="text" class="form-control" id="fullName" aria-describedby="fullNameHelp">
+								<label for="full-name" class="hib-form-input">Full Name *</label>
+								<input type="text" class="form-control" id="contact-inquiry-full-name">
 							</div>
 							<div class="form-group col-md-6">
-								<label for="Company"  class="hib-form-input">Company *</label>
-								<input type="text" class="form-control" id="Company">
+								<label for="company"  class="hib-form-input">Company *</label>
+								<input type="text" class="form-control" id="contact-inquiry-company">
 							</div>
 						</div>
 						<div class="form-row" id="form-row-9">
 							<div class="form-group col-md-6">
-								<label for="phoneNumber" class="hib-form-input">Phone Number *</label>
-								<input type="text" class="form-control" id="phoneNumber" aria-describedby="phoneNumberHelp">
+								<label for="email-address"  class="hib-form-input">Email Address *</label>
+								<input type="email" class="form-control" id="contact-inquiry-email-address">
 							</div>
 							<div class="form-group col-md-6">
-								<label for="emailAddress"  class="hib-form-input">Email Address *</label>
-								<input type="text" class="form-control" id="emailAddress">
+								<label for="phone-number" class="hib-form-input">Phone Number</label>
+								<input type="tel" class="form-control" id="contact-inquiry-phone-number">
 							</div>
 						</div>
 						<div class="form-row" id="form-row-10">
 							<div class="form-group col">
 								<label for="message" class="hib-form-input">Message</label>
-								<textarea type="text" class="form-control" id="message" rows="5"></textarea>
+								<textarea type="text" class="form-control" id="contact-inquiry-message" rows="5"></textarea>
 							</div>
 						</div>
 						<div class="text-left" id="hib-contact-submit">
-							<button type="button" id="hib-contact-submit-inquiry" class="btn btn-primary disabled" >Submit</button>
+							<button type="submit" id="hib-contact-inquiry-submit" class="btn btn-primary disabled" >Submit</button>
 						</div>
 					</form>
 				</div>
@@ -113,7 +113,7 @@
 	  					<div class="form-row" id="form-row-1">
 	    					<div class="form-group col-md-6">
 								<label for="fullName" class="hib-form-input">Full Name *</label>
-								<input type="text" class="form-control hib-form-input-required" id="fullName" aria-describedby="fullNameHelp">
+								<input type="text" class="form-control hib-form-input-required" id="fullName">
 							</div>
 							<div class="form-group col-md-6">
 								<label for="Company"  class="hib-form-input">Company *</label>
@@ -123,7 +123,7 @@
 						<div class="form-row" id="form-row-2">
 							<div class="form-group col-md-6">
 								<label for="phoneNumber" class="hib-form-input">Phone Number *</label>
-								<input type="text" class="form-control hib-form-input-required" id="phoneNumber" aria-describedby="phoneNumberHelp">
+								<input type="text" class="form-control hib-form-input-required" id="phoneNumber">
 							</div>
 							<div class="form-group col-md-6">
 								<label for="emailAddress"  class="hib-form-input">Email Address *</label>
@@ -134,7 +134,7 @@
                         <div class="form-row" id="form-row-3">
 							<div class="form-group col-md">
 								<label for="shippingAddress" class="hib-form-input">Shipping Address Line 1 *</label>
-								<input type="text" class="form-control hib-form-input-required" id="shippingAddress" aria-describedby="shippingAddressHelp">
+								<input type="text" class="form-control hib-form-input-required" id="shippingAddress">
 							</div>
 						</div>
 						<div class="form-row" id="form-row-3">
@@ -146,7 +146,7 @@
 						<div class="form-row" id="form-row-4">
 							<div class="form-group col-md-6">
 								<label for="city" class="hib-form-input">City *</label>
-								<input type="text" class="form-control hib-form-input-required" id="city" aria-describedby="cityHelp">
+								<input type="text" class="form-control hib-form-input-required" id="city">
 							</div>
 							<div class="form-group col-md-6">
 								<label for="state"  class="hib-form-input">State *</label>
@@ -217,7 +217,7 @@
 						<div class="form-row" id="form-row-5">
  							<div class="form-group col-md-6">
  								<label for="zipCode" class="hib-form-input">Zip Code *</label>
- 								<input type="text" class="form-control hib-form-input-required" id="zipCode" aria-describedby="zipCodeHelp">
+ 								<input type="text" class="form-control hib-form-input-required" id="zipCode">
  							</div>
  							<div class="form-group col-md-6">
  								<label for="contry"  class="hib-form-input">Country *</label>
