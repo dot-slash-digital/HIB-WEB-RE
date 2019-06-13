@@ -62,7 +62,7 @@
                         <input type="radio" name="options" id="hib-contact-us-inquiry-btn" checked> General Inquiry
                     </label>
                     <label id="toggle-request" class="btn btn-contact-toggle">
-                        <input type="radio" name="options" id="hib-contact-us-request-btn"> Sample Requests
+                        <input type="radio" name="options" id="hib-contact-us-request-btn"> Sample Request
                     </label>
 				</div>
 			</div>
@@ -108,49 +108,49 @@
 			</div>
             
             <div id="hib-request-form-outer" class="row">
-				<div id="hib-request-form" class="col">
-					<form>
+				<div class="col">
+					<form id="hib-request-form">
 	  					<div class="form-row" id="form-row-1">
 	    					<div class="form-group col-md-6">
-								<label for="fullName" class="hib-form-input">Full Name *</label>
-								<input type="text" class="form-control hib-form-input-required" id="fullName">
+								<label for="full-name" class="hib-form-input">Full Name *</label>
+								<input type="text" class="form-control hib-form-input-required" id="contact-request-full-name">
 							</div>
 							<div class="form-group col-md-6">
-								<label for="Company"  class="hib-form-input">Company *</label>
-								<input type="text" class="form-control hib-form-input-required" id="Company">
+								<label for="company"  class="hib-form-input">Company *</label>
+								<input type="text" class="form-control hib-form-input-required" id="contact-request-company">
 						    </div>
 						</div>
 						<div class="form-row" id="form-row-2">
 							<div class="form-group col-md-6">
-								<label for="phoneNumber" class="hib-form-input">Phone Number *</label>
-								<input type="text" class="form-control hib-form-input-required" id="phoneNumber">
+								<label for="email-address"  class="hib-form-input">Email Address *</label>
+								<input type="email" class="form-control hib-form-input-required" id="contact-request-email-address">
 							</div>
 							<div class="form-group col-md-6">
-								<label for="emailAddress"  class="hib-form-input">Email Address *</label>
-								<input type="text" class="form-control hib-form-input-required" id="emailAddress">
+								<label for="phone-number" class="hib-form-input">Phone Number</label>
+								<input type="tel" class="form-control hib-form-input-required" id="contact-request-phone-number">
 							</div>
 						</div>
                         
                         <div class="form-row" id="form-row-3">
 							<div class="form-group col-md">
-								<label for="shippingAddress" class="hib-form-input">Shipping Address Line 1 *</label>
-								<input type="text" class="form-control hib-form-input-required" id="shippingAddress">
+								<label for="shipping-address" class="hib-form-input">Shipping Address Line 1 *</label>
+								<input type="text" class="form-control hib-form-input-required" id="contact-request-shipping-address">
 							</div>
 						</div>
 						<div class="form-row" id="form-row-3">
 							<div class="form-group col-md">
-								<label for="shippingAddress2"  class="hib-form-input">Shipping Address Line 2</label>
-								<input type="text" class="form-control" id="shippingAddress2">
+								<label for="shipping-address-2"  class="hib-form-input">Shipping Address Line 2</label>
+								<input type="text" class="form-control" id="contact-request-shipping-address-2">
 							</div>
 						</div>
 						<div class="form-row" id="form-row-4">
 							<div class="form-group col-md-6">
 								<label for="city" class="hib-form-input">City *</label>
-								<input type="text" class="form-control hib-form-input-required" id="city">
+								<input type="text" class="form-control hib-form-input-required" id="contact-request-city">
 							</div>
 							<div class="form-group col-md-6">
 								<label for="state"  class="hib-form-input">State *</label>
-                                <select class="custom-select hib-form-input">
+                                <select class="custom-select hib-form-input" id="contact-request-state">
                                     <option selected>Choose a State...</option>
                                     <option value="AL">AL</option>
                                     <option value="AK">AK</option>
@@ -216,12 +216,12 @@
 						</div>
 						<div class="form-row" id="form-row-5">
  							<div class="form-group col-md-6">
- 								<label for="zipCode" class="hib-form-input">Zip Code *</label>
- 								<input type="text" class="form-control hib-form-input-required" id="zipCode">
+ 								<label for="zip-code" class="hib-form-input">Zip Code *</label>
+ 								<input type="text" class="form-control hib-form-input-required" id="contact-request-zip-code">
  							</div>
  							<div class="form-group col-md-6">
- 								<label for="contry"  class="hib-form-input">Country *</label>
- 								<select class="custom-select hib-form-input">
+ 								<label for="country"  class="hib-form-input">Country *</label>
+ 								<select class="custom-select hib-form-input" id="contact-request-country">
                                     <option selected>Choose a Country...</option>
                                     <option value="United States">United States</option>
                                     <option value="China">China</option>
@@ -469,27 +469,27 @@
                         
                         <div class="form-row" id="form-row-7">
 							<div class="form-group col-md-6">
-								<label for="sampleType" class="hib-form-input">Sample Type *</label>
-								<select class="custom-select hib-form-input">
+								<label for="sample-type" class="hib-form-input">Sample Type *</label>
+								<select class="custom-select hib-form-input" id="contact-request-sample-type">
                                     <option selected>Choose a Sample Type...</option>
                                     <option value="Hibiscus Concentrated Liquid Extract">Hibiscus Concentrated Liquid Extract</option>
                                     <option value="Hibiscus Extract Powder">Hibiscus Extract Powder</option>
                                 </select>
 							</div>
 							<div class="form-group col-md-6">
-								<label for="AppOfSample"  class="hib-form-input">Application of Sample *</label>
-								<input type="text" class="form-control hib-form-input-required" id="AppOfSample">
+								<label for="application-of-sample"  class="hib-form-input">Application of Sample *</label>
+								<input type="text" class="form-control hib-form-input-required" id="contact-request-application-of-sample">
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="form-group col">
 								<label for="message" class="hib-form-input">Message</label>
-								<textarea type="text" rows="5" class="form-control" id="message"></textarea>
+								<textarea type="text" rows="5" class="form-control" id="contact-request-message"></textarea>
 							</div>
 						</div>
 						<div class="form-row">
 							<div class="text-left col" id="hib-contact-submit">
-								<button type="button" id="hib-contact-submit-request" class="btn btn-primary disabled">Submit</button>
+								<button type="submit" id="hib-contact-submit-request" class="btn btn-primary disabled">Submit</button>
 							</div>
 						</div>
 					</form>
