@@ -6,16 +6,14 @@ h1 {
 	padding: 0px;
 }
 
-a:visited {
-    color: #B15160;
+a.nav-link:visited{
+  color: #B15160;
+
 }
 
-a:link {
-    color: #B15160;
-}
+a.nav-link:link{
+  color: #B15160;
 
-.nav-tabs {
-    border: 1px solid #dee2e6;
 }
 
 #hib-products-descriptions-tabs-left{

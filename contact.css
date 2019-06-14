@@ -68,6 +68,16 @@ h1 {
     margin-bottom: 50px;
 }
 
+.btn:focus,.btn.btn-primary.disabled {
+   outline: none !important;
+   box-shadow: none;
+}
+
+.btn.btn-primary.disabled:active {
+  color: #ffffff;
+  border: 2px solid grey !important;
+  background-color: grey !important;
+}
 .btn.btn-primary.disabled {
     background-color: grey;
     border: 2px solid grey;
