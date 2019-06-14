@@ -6,6 +6,21 @@ h1 {
 	padding: 0px;
 }
 
+a:visited {
+    color: #B15160;
+}
+
+a:link {
+    color: #B15160;
+}
+
+.nav-tabs {
+    border: 1px solid #dee2e6;
+}
+
+#hib-products-descriptions-tabs-left{
+  width:420px;
+}
 #hib-products-top {
     margin-bottom: 144px;
     text-align: center;
@@ -15,6 +30,7 @@ h1 {
 
 #hib-products-top h1 {
 	position:relative;
+  font-size: 85px;
 	top: 50%;
 	transform: translateY(-50%);
 }
