@@ -98,6 +98,6 @@ h1 {
     box-shadow: none;
 }
 
-#hib-contact-inquiry-submit.disabled, #hib-contact-request-submit.disabled {
+#hib-contact-submit-inquiry.disabled, #hib-contact-submit-request.disabled {
     cursor: not-allowed;
 }

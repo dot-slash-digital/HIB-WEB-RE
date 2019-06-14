@@ -1,3 +1,9 @@
+// Set contact form submit buttons to disabled on page load
+$(document).ready(function() {
+    $("#hib-contact-submit-inquiry").addClass("disabled");
+    $("#hib-contact-submit-request").addClass("disabled");
+});
+
 // Submission and input validation for General Inquiry form
 $("#hib-inquiry-form").submit(function() {
     // Full Name (required)
@@ -184,12 +190,13 @@ $("textarea").on('input', function() {
     $(this).removeClass("is-invalid");
 });
 
+// Display inquiry form upon clicking toggle button
 $("#toggle-inquiry").click(function(e) {
     e.preventDefault();
     
-    // request form was visible prior to button click
+    // Request form was visible prior to button click
     if ($("#toggle-request").hasClass("active")) {
-        // hide request form, display inquiry form
+        // Hide request form, display inquiry form
         $("#hib-inquiry-form-outer").css("display", "block");
         $("#hib-request-form-outer").css("display", "none");
     }
@@ -200,12 +207,13 @@ $("#toggle-inquiry").click(function(e) {
     }, 800);
 });
 
+// Display request form upon clicking toggle button
 $("#toggle-request").click(function(e) {
     e.preventDefault();
     
-    // inquiry form was visible prior to button click
+    // Inquiry form was visible prior to button click
     if ($("#toggle-inquiry").hasClass("active")) {
-        // hide inquiry form, display request form
+        // Hide inquiry form, display request form
         $("#hib-request-form-outer").css("display", "block");
         $("#hib-inquiry-form-outer").css("display", "none");
     }
@@ -215,3 +223,54 @@ $("#toggle-request").click(function(e) {
         scrollTop: $("#hib-request-form-outer").offset().top - $("#hib-header").height()
     }, 800);
 });
+
+// Enable submit button when all required fields are valid
+$(".form-control").keyup(function() {
+    // When inquiry form is visible and all required fields are valid
+    if ($("#hib-inquiry-form-outer").css("display") == "block" &&
+        $("#contact-inquiry-full-name").val() != "" &&
+        $("#contact-inquiry-company").val() != "" &&
+        $("#contact-inquiry-email-address").val() != "")
+        $("#hib-contact-submit-inquiry").removeClass("disabled");
+    else
+        $("#hib-contact-submit-inquiry").addClass("disabled");
+    
+    // When request form is visible and all required fields are valid
+    if ($("#hib-request-form-outer").css("display") == "block" &&
+        $("#contact-request-full-name").val() != "" &&
+        $("#contact-request-company").val() != "" &&
+        $("#contact-request-email-address").val() != "" &&
+        $("#contact-request-shipping-address").val() != "" &&
+        $("#contact-request-city").val() != "" &&
+        $("#contact-request-state").val() != "Choose a State..." &&
+        $("#contact-request-zip-code").val() != "" &&
+        $("#contact-request-country").val() != "Choose a Country..." &&
+        $("#contact-request-sample-type").val() != "Choose a Sample Type..." &&
+        $("#contact-request-application-of-sample").val() != "")
+        $("#hib-contact-submit-request").removeClass("disabled");
+    else
+        $("#hib-contact-submit-request").addClass("disabled");
+    
+    console.log("inquiry: " + $("#hib-contact-submit-inquiry").hasClass("disabled"));
+    console.log("request: " + $("#hib-contact-submit-request").hasClass("disabled"));
+});
+
+// TODO
+function isFullNameValid(full_name) {
+    
+}
+
+// TODO
+function isEmailAddressValid(email_address) {
+    
+}
+
+// TODO
+function isPhoneNumberValid(phone_number) {
+    
+}
+
+// TODO
+function isZipCodeValid(zip_code) {
+    
+}
