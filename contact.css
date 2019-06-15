@@ -1,6 +1,6 @@
 h1 {
     color: white;
-    font-size: 85px;
+    font-size: 100px;
 }
 
 #hib-contact-us {
@@ -15,7 +15,7 @@ h1 {
 }
 
 #hib-contact-us-about {
-    max-width: 960px;
+    max-width: 500px;
     text-align: center;
     margin-bottom: 144px;
 }
@@ -39,7 +39,7 @@ h1 {
 }
 
 #hib-inquiry-form, #hib-request-form {
-    max-width: 600px;
+    max-width: 700px;
     margin-bottom: 144px;
     margin: 0 auto 144px auto;
 }

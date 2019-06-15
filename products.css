@@ -16,9 +16,6 @@ a.nav-link:link{
 
 }
 
-#hib-products-descriptions-tabs-left{
-  width:420px;
-}
 #hib-products-top {
     margin-bottom: 144px;
     text-align: center;
@@ -28,7 +25,7 @@ a.nav-link:link{
 
 #hib-products-top h1 {
 	position:relative;
-  font-size: 85px;
+    font-size: 100px;
 	top: 50%;
 	transform: translateY(-50%);
 }
@@ -38,7 +35,7 @@ a.nav-link:link{
 }
 
 #hib-products-descriptions {
-	max-width: 960px;
+	max-width: 1200px;
 	text-align: center;
 	margin-bottom: 144px;
 }
@@ -66,7 +63,6 @@ a.nav-link:link{
 }
 
 #hib-products-bottom {
-    max-width: 600px;
     text-align: center;
     margin-bottom: 144px;
 }

@@ -78,8 +78,7 @@ a:active {
 }
 
 #hib-nav {
-	/* padding: 32px 20px; */
-	max-width: 960px;
+	max-width: 1200px;
     margin: 0 auto;
 
 }
