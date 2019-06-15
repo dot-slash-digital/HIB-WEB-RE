@@ -6,16 +6,6 @@ h1 {
 	padding: 0px;
 }
 
-a.nav-link:visited{
-  color: #B15160;
-
-}
-
-a.nav-link:link{
-  color: #B15160;
-
-}
-
 #hib-products-top {
     margin-bottom: 144px;
     text-align: center;
@@ -77,4 +67,8 @@ a.nav-link:link{
 
 #hib-products-bottom-buttons :first-child {
     margin-right: 20px;
+}
+
+.nav-tabs .nav-link {
+    color: #989898;
 }
