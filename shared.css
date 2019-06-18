@@ -126,3 +126,11 @@ h4 {
     color: #B15160;
     text-decoration: underline;
 }
+
+#logo-text {
+    color: black;
+    font-size: 10px;
+    margin: 5px 0 0 0;
+    text-align: center;
+    font-weight: bold;
+}
