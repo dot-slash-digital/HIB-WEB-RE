@@ -45,11 +45,13 @@ h1 {
 	margin-bottom: 30px;
 }
 
-.hib-products-descriptions-tabs-content {
-	background-color: lightgrey;
+.tab-content {
 	padding: 10px 20px;
 	text-align: left;
-	height: 100px;
+    
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #dee2e6;
 }
 
 #hib-products-bottom {
@@ -71,4 +73,16 @@ h1 {
 
 .nav-tabs .nav-link {
     color: #989898;
+}
+
+.nav-tabs .nav-link.active {
+    color: #9B0926;
+}
+
+.nav-tabs .nav-link:hover {
+    color: #B15160;
+}
+
+.tab-pane {
+    color: black;
 }
