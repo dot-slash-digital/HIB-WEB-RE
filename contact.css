@@ -15,9 +15,13 @@ h1 {
 }
 
 #hib-contact-us-about {
-    max-width: 500px;
+    max-width: 1000px;
     text-align: center;
     margin-bottom: 144px;
+}
+
+#hib-contact-us-about h4 {
+    margin-bottom: 15px;
 }
 
 #hib-contact-us-buttons {
@@ -53,19 +57,12 @@ h1 {
 
 }
 
-#form-row-1,
-#form-row-3,
-#form-row-4,
-#form-row-6,
-#form-row-7,
-#form-row-8,
-#form-row-9 {
-    margin-bottom: 10px;
+.form-row {
+    margin-bottom: 16px !important;
 }
 
-#form-row-2,
-#form-row-5 {
-    margin-bottom: 50px;
+.form-break {
+    height: 50px;
 }
 
 .btn:focus,.btn.btn-primary.disabled {
@@ -74,7 +71,7 @@ h1 {
 }
 
 .btn.btn-primary.disabled:active {
-  color: #ffffff;
+  color: white;
   border: 2px solid grey !important;
   background-color: grey !important;
 }
@@ -86,13 +83,13 @@ h1 {
 .btn-contact-toggle {
     background-color: #B15160;
     border: 2px solid #9B0926;
-    color: #FFFFFF;
+    color: white;
     width: 175px;
 }
 
 .btn-contact-toggle:hover {
     background-color: #A2203A;
-    color: #FFFFFF;
+    color: white;
 }
 
 .btn-contact-toggle.active {
@@ -110,4 +107,14 @@ h1 {
 
 #hib-contact-submit-inquiry.disabled, #hib-contact-submit-request.disabled {
     cursor: not-allowed;
+}
+
+.form-asterisk {
+    color: #B15160;
+}
+
+#form-request-disclaimer {
+    font-size: 10px;
+    font-style: italic;
+    padding: 0 5px;
 }
