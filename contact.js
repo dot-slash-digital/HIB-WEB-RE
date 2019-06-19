@@ -236,11 +236,19 @@ $("#toggle-request").click(function(e) {
 $(function() {
     var url = new URL(window.location.href);
     var form_type = url.searchParams.get("form");
+    var product_type = url.searchParams.get("product");
     console.log(form_type);
     
     if (form_type == "sample_request") {
         showRequestForm(2000);
+        $("#toggle-inquiry").removeClass("active");
+        $("#toggle-request").addClass("active");
     }
+    
+    if (product_type == "powder")
+        $("#contact-request-sample-type").val("Hibiscus Extract Powder");
+    else if (product_type == "liquid")
+        $("#contact-request-sample-type").val("Hibiscus Concentrated Liquid Extract");
 });
 
 // Enable submit button when all required fields are valid
