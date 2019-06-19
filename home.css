@@ -15,11 +15,18 @@
     text-align: right;
 }
 
-#hib-home-top-text h3 {
+#hib-home-top-text h1 {
+    color: white;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
+#hib-home-top-text h2 {
     color: white;
     font-size: 48px;
     margin-bottom: 30px;
 }
+
 
 #hib-home-use-cases {
     margin-top: 144px;
@@ -28,35 +35,30 @@
     margin-bottom: 144px;
 }
 
-#hib-home-use-cases h1 {
-    margin-bottom: 30px;
-}
-
-#hib-home-our-products {
-    max-width: 1200px;
+.hib-home-section-title {
     text-align: center;
-    margin-bottom: 144px;
-}
-
-#hib-home-our-products h1 {
+    width: 100%;
     margin-bottom: 30px;
 }
 
-#hib-home-our-products div {
-    margin-bottom: 10px;
+#hib-home-features-list {
+    margin: 0 auto 144px auto;
+    max-width: 1200px;
 }
 
-#hib-home-our-products-left div,
-#hib-home-our-products-right div {
-    background-color: lightgrey;
-    margin-bottom: 20px;
-    height: 350px;
-    overflow-y: hidden;
+#hib-home-features-list .col-4 {
+    min-height: 100px;
 }
 
-#hib-home-our-products-left img,
-#hib-home-our-products-right img {
-    width: 100%;
+#hib-home-features-list .col-4:last-child {
+    min-height: 0 !important;
+}
+
+.calyx-icon {
+    height: 20px;
+    float: left;
+    padding-right: 5px;
+    margin-top: 2px;
 }
 
 #hib-home-bottom {

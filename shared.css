@@ -5,13 +5,17 @@
 }
 
 h1 {
-	color: #9B0926;
+	color: black;
 	font-family: "Noto Sans HK", sans-serif;
 	font-weight: bold;
 }
 
 h4 {
 	font-family: "Poppins", sans-serif;
+}
+
+i {
+    color: #9B0926;
 }
 
 #hib-header {
