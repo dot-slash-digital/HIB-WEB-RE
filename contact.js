@@ -190,27 +190,8 @@ $("textarea").on('input', function() {
     $(this).removeClass("is-invalid");
 });
 
-// Display inquiry form upon clicking toggle button
-$("#toggle-inquiry").click(function(e) {
-    e.preventDefault();
-    
-    // Request form was visible prior to button click
-    if ($("#toggle-request").hasClass("active")) {
-        // Hide request form, display inquiry form
-        $("#hib-inquiry-form-outer").css("display", "block");
-        $("#hib-request-form-outer").css("display", "none");
-    }
-    
-    // Smooth scroll down to top of form
-    $('html, body').animate({
-        scrollTop: $("#hib-inquiry-form-outer").offset().top - $("#hib-header").height()
-    }, 800);
-});
-
-// Display request form upon clicking toggle button
-$("#toggle-request").click(function(e) {
-    e.preventDefault();
-    
+// Display 'Sample Request' form and hide 'General Inquiry' form
+function showRequestForm(scrollTime) {
     // Inquiry form was visible prior to button click
     if ($("#toggle-inquiry").hasClass("active")) {
         // Hide inquiry form, display request form
@@ -220,8 +201,46 @@ $("#toggle-request").click(function(e) {
     
     // Smooth scroll down to top of form
     $('html, body').animate({
-        scrollTop: $("#hib-request-form-outer").offset().top - $("#hib-header").height()
-    }, 800);
+        scrollTop: $("#hib-contact-us-buttons").offset().top - $("#hib-header").height() - 5
+    }, scrollTime);
+}
+
+// Display 'General Inquiry' form and hide 'Sample Request' form
+function showInquiryForm(scrollTime) {
+    // Request form was visible prior to button click
+    if ($("#toggle-request").hasClass("active")) {
+        // Hide request form, display inquiry form
+        $("#hib-inquiry-form-outer").css("display", "block");
+        $("#hib-request-form-outer").css("display", "none");
+    }
+    
+    // Smooth scroll down to top of form
+    $('html, body').animate({
+        scrollTop: $("#hib-contact-us-buttons").offset().top - $("#hib-header").height() - 5
+    }, scrollTime);
+}
+
+// Display inquiry form upon clicking toggle button
+$("#toggle-inquiry").click(function(e) {
+    e.preventDefault();
+    showInquiryForm(800);
+});
+
+// Display request form upon clicking toggle button
+$("#toggle-request").click(function(e) {
+    e.preventDefault();
+    showRequestForm(800);
+});
+
+// Display request form if URL parameter has 'sample_request'
+$(function() {
+    var url = new URL(window.location.href);
+    var form_type = url.searchParams.get("form");
+    console.log(form_type);
+    
+    if (form_type == "sample_request") {
+        showRequestForm(2000);
+    }
 });
 
 // Enable submit button when all required fields are valid
