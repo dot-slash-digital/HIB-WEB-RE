@@ -57,8 +57,20 @@ h1 {
 
 }
 
-.form-row {
-    margin-bottom: 16px !important;
+@media (min-width: 768px) {
+    .form-row {
+        margin-bottom: 16px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-row {
+        margin-bottom: 0 !important;
+    }
+    
+    .form-group {
+        margin-bottom: 16px !important;
+    }
 }
 
 .form-break {
