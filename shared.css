@@ -138,3 +138,10 @@ i {
     text-align: center;
     font-weight: bold;
 }
+
+@media (max-width: 404px) {
+    #hib-home-bottom-buttons > a:nth-child(1) > button,
+    #hib-products-bottom-buttons > a:nth-child(1) > button {
+        margin-bottom: 5px;
+    }
+}
