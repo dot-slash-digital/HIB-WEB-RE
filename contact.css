@@ -3,15 +3,37 @@ h1 {
     font-size: 100px;
 }
 
+@media (min-width: 691px) {
+    #hib-contact-up-top h1 {
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 690px) {
+    #hib-contact-up-top h1 {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 499px) {
+    #hib-contact-up-top h1 {
+        font-size: 48px;
+    }
+}
+
 #hib-contact-us {
     padding: 0px;
 }
 
 #hib-contact-up-top {
     margin-bottom: 144px;
-    background-image: url(masthead-contact-hibiscus.jpg);
     height: 500px;
     text-align: center;
+    
+    background-image: url(masthead-contact-hibiscus.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #hib-contact-us-about {

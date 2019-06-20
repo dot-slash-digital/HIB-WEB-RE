@@ -8,16 +8,37 @@ h1 {
 
 #hib-products-top {
     margin-bottom: 144px;
-    text-align: center;
     height: 500px;
+    text-align: center;
+    
     background-image: url(masthead-products.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 #hib-products-top h1 {
 	position:relative;
-    font-size: 100px;
 	top: 50%;
 	transform: translateY(-50%);
+}
+
+@media (min-width: 691px) {
+    #hib-products-top h1 {
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 690px) {
+    #hib-products-top h1 {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 499px) {
+    #hib-products-top h1 {
+        font-size: 48px;
+    }
 }
 
 #hib-products-bottom-buttons button {

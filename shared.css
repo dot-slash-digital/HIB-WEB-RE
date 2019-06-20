@@ -53,6 +53,8 @@ i {
 #hib-nav {
 	padding-left: 0;
     padding-right: 0;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .navbar-nav {
@@ -61,6 +63,12 @@ i {
 
 .navbar-nav :not(:last-child) {
 	margin-right: 60px;
+}
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        padding-top: 20px;
+    }
 }
 
 #hib-nav .nav-link {
@@ -76,8 +84,8 @@ i {
     color: #B15160;
 }
 
-.hib-container {
-	margin-top: 116px;
+.navbar-toggler {
+    border: none;
 }
 
 .hib-container div {
@@ -133,7 +141,6 @@ i {
 
 #logo-text {
     color: black;
-    font-size: 10px;
     margin: 5px 0 0 0;
     text-align: center;
     font-weight: bold;
@@ -143,5 +150,54 @@ i {
     #hib-home-bottom-buttons > a:nth-child(1) > button,
     #hib-products-bottom-buttons > a:nth-child(1) > button {
         margin-bottom: 5px;
+    }
+}
+
+@media (min-width: 505px) and (max-width: 775px) {
+    #hib-footer-left, #hib-footer-right {
+        min-width: 50%;
+    }
+    
+    #hib-footer-center {
+        display: none !important;
+    }
+}
+
+@media (max-width: 504px) {
+    #hib-footer-left {
+        min-width: 100%;
+        text-align: center;
+    }
+    
+    #hib-footer-center, #hib-footer-right {
+        display: none !important;
+    }
+}
+
+@media (min-width: 650px) {
+    #hib-logo {
+        height: 100px;
+    }
+    
+    #logo-text {
+        font-size: 10px;
+    }
+    
+    .hib-container {
+        margin-top: 116px;
+    }
+}
+
+@media (max-width: 649px) {
+    #hib-logo {
+        height: 75px;
+    }
+    
+    #logo-text {
+        font-size: 8px;
+    }
+    
+    .hib-container {
+        margin-top: 109px;
     }
 }
