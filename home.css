@@ -2,6 +2,10 @@
     padding: 0px;
 }
 
+#hib-home-jumbotron {
+    background-image: url(masthead-hibiscus-v4-2-1920x500_c.jpg);
+}
+
 #hib-home-top {
     max-width: 1200px;
 }
@@ -27,29 +31,128 @@
     margin-bottom: 30px;
 }
 
+#hib-home-description {
+    margin-top: 144px;
+    margin-bottom: 72px;
+    max-width: 1200px;
+}
+
+#hib-home-description div p span {
+    font-weight: bold;
+    color: #9B0926;
+}
+
+@media (min-width: 675px) {
+    #hib-home-description > div:nth-child(1) {
+        padding-right: 50px;
+    }
+}
+
+#hib-home-description > div:nth-child(1) > p,
+#hib-home-description > div:nth-child(1) > p > span {
+    margin: 0;
+}
+
+#hib-home-description > div:nth-child(2) {
+    max-width: 500px;
+}
+
+#hib-home-description > div:nth-child(2) > img {
+    width: 100%;
+}
+
+@media (min-width: 1150px) {
+    #hib-home-description > div:nth-child(1) > p,
+    #hib-home-description > div:nth-child(1) > p > span {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1000px) and (max-width: 1149px) {
+    #hib-home-description > div:nth-child(1) > p,
+    #hib-home-description > div:nth-child(1) > p > span {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 850px) and (max-width: 999px) {
+    #hib-home-description > div:nth-child(1) > p,
+    #hib-home-description > div:nth-child(1) > p > span {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 849px) {
+    #hib-home-description > div:nth-child(1) > p,
+    #hib-home-description > div:nth-child(1) > p > span {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 675px) {
+    #hib-home-description > div:nth-child(1) {
+        text-align: center;
+    }
+    
+    #hib-home-description > div:nth-child(2) {
+        display: none !important;
+    }
+}
 
 #hib-home-use-cases {
-    margin-top: 144px;
-    max-width: 1200px;
-    text-align: center;
     margin-bottom: 144px;
+    max-width: 1200px;
 }
 
-@media (min-width: 577px) {
-    #hib-home-use-cases .row .col-3 {
-        min-width: 25%;
+#hib-home-use-cases div {
+    display: block;
+}
+
+@media (min-width: 1075px) {
+    #hib-home-use-cases > div:nth-child(1),
+    #hib-home-use-cases > div:nth-child(2),
+    #hib-home-use-cases > div:nth-child(3),
+    #hib-home-use-cases > div:nth-child(4),
+    #hib-home-use-cases > div:nth-child(5) {
+        flex: 0 0 20%;
     }
 }
 
-@media (max-width: 576px) {
-    #hib-home-use-cases .row .col-3 {
-        min-width: 50%;
+@media (min-width: 475px) and (max-width: 1074px) {
+    #hib-home-use-cases {
+        max-width: 650px;
+    }
+    
+    #hib-home-use-cases > div:nth-child(1),
+    #hib-home-use-cases > div:nth-child(2),
+    #hib-home-use-cases > div:nth-child(3),
+    #hib-home-use-cases > div:nth-child(4),
+    #hib-home-use-cases > div:nth-child(5) {
+        flex: 0 0 33%;
+    }
+    #hib-home-use-cases > div:nth-child(4) {
+        margin-top: 15px;
+        margin-right: 0;
+    }
+    #hib-home-use-cases > div:nth-child(5) {
+        margin-top: 15px;
+        margin-left: 0;
     }
 }
 
-@media (max-width: 300px) {
-    #hib-home-use-cases .row .col-3 i {
-        font-size: 48px;
+@media (max-width: 474px) {
+    #hib-home-use-cases > div:nth-child(1),
+    #hib-home-use-cases > div:nth-child(2),
+    #hib-home-use-cases > div:nth-child(3),
+    #hib-home-use-cases > div:nth-child(4),
+    #hib-home-use-cases > div:nth-child(5) {
+        flex: 0 0 50%;
+    }
+    
+    #hib-home-use-cases > div:nth-child(3),
+    #hib-home-use-cases > div:nth-child(4),
+    #hib-home-use-cases > div:nth-child(5) {
+        margin-top: 15px;
     }
 }
 
@@ -59,17 +162,17 @@
     margin-bottom: 30px;
 }
 
-#hib-home-features-list {
+#hib-home-features {
     margin: 0 auto 144px auto;
     max-width: 1000px;
     font-size: 18px;
 }
 
-#hib-home-features-list .col-4 {
+#hib-home-features .col-4 {
     min-height: 100px;
 }
 
-#hib-home-features-list .col-4:last-child {
+#hib-home-features .col-4:last-child {
     min-height: 0 !important;
 }
 
@@ -91,4 +194,14 @@
 
 #hib-home-bottom-text {
     margin-bottom: 20px;
+}
+
+#hib-home-use-cases .col {
+    text-align: center;
+}
+
+#hib-home-use-cases .col i {
+    width: 100%;
+    font-size: 72px;
+    margin-bottom: 5px;
 }

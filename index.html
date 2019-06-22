@@ -5,11 +5,7 @@
 		<title>HIB - Home</title>
 
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-		<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Noto+Sans+HK&display=swap" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.css" integrity="sha256-39jKbsb/ty7s7+4WzbtELS4vq9udJ+MDjGTD5mtxHZ0=" crossorigin="anonymous" />
 
 		<link rel="stylesheet" type="text/css" href="shared.css">
 		<link rel="stylesheet" type="text/css" href="home.css">
@@ -19,7 +15,7 @@
 		<header id="hib-header" class="container-fluid fixed-top">
 			<nav id="hib-nav" class="navbar navbar-expand-md navbar-light">
 				<a href="index.html">
-                    <img id="hib-logo" src="PhytoHib_small.png">
+                    <img id="hib-logo" src="phytohib_logo.png">
                     <p id="logo-text">PREMIUM QUALITY HIBISCUS EXTRACTS SINCE 2004</p>
                 </a>
 
@@ -44,7 +40,7 @@
 		</header>
 
 		<div id="hib-home" class="container-fluid hib-container">
-			<div class="row" style="background-image: url(masthead-hibiscus-v4-2-1920x500_c.jpg)">
+			<div id="hib-home-jumbotron" class="row">
 				<div id="hib-home-top" class="col">
 					<div class="row">
 						<div class="col-lg-5">
@@ -56,42 +52,50 @@
                                 <h2>Organic 100% Hibiscus Extract Powder</h2>
 								<a href="products.html">
 									<button type="button" class="btn btn-primary">Learn More</button>
-						 	 </a>
+						 	    </a>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<div class="row">
-				<div id="hib-home-use-cases" class="col">
-					<h2 class="hib-home-section-title">Use Cases</h2>
-					<div class="row">
-						<div class="col-3 fa-5x">
-							<i class="fa fa-cutlery"></i>
-							<p style="font-size: 24px">Food</p>
-						</div>
-						<div class="col-3 fa-5x">
-							<i class="fa fa-glass"></i>
-							<p style="font-size: 24px">Beverage</p>
-						</div>
-						<div class="col-3 fa-5x">
-							<i class="fa fa-medkit"></i>
-							<p style="font-size: 24px">Medical</p>
-						</div>
-						<div class="col-3 fa-5x">
-							<i class="fa fa-shopping-bag"></i>
-							<p style="font-size: 24px">Cosmetic</p>
-						</div>
-					</div>
-				</div>
+			<div id="hib-home-description" class="row">
+				<div class="col d-flex flex-wrap align-items-center">
+                    <p>Consider PhytoHib&trade; Organic Hibiscus Extract as a <span>pure and simple</span> plant-based source of unique color and flavor ingredient for new product introductions.</p>
+                </div>
+                <div class="col d-flex flex-wrap align-items-center">
+                    <img src="phytohib_logo.png">
+                </div>
 			</div>
+            
+            <div id="hib-home-use-cases" class="row">
+                <div class="col">
+                    <i class="fas fa-coffee"></i>
+                    <span>RTD Beverages &amp; Teas</span>
+                </div>
+                <div class="col">
+                    <i class="fas fa-ice-cream"></i>
+                    <span>Frozen Desserts</span>
+                </div>
+                <div class="col">
+                    <i class="fas fa-beer"></i>
+                    <span>Craft Brewing</span>
+                </div>
+                <div class="col">
+                    <i class="fas fa-candy-cane"></i>
+                    <span>Confectionary</span>
+                </div>
+                <div class="col">
+                    <i class="fas fa-capsules"></i>
+                    <span>Dietary Supplements</span>
+                </div>
+            </div>
 
             <div class="row">
                 <h2 class="hib-home-section-title">Perfecting the Hibiscus Taste Experience!</h2>
             </div>
             
-			<div id="hib-home-features-list" class="row">
+			<div id="hib-home-features" class="row">
 				<div class="col-4">
                     <div class="row">
                         <div class="col-1">
@@ -198,7 +202,7 @@
                             <img class="calyx-icon" src="calyx-icon.png">
                         </div>
                         <div class="col">
-                            <p>USA inventory &mdash; Next-day shipments!</p>
+                            <p>USA inventory &mdash; next-day shipments!</p>
                         </div>
                     </div>
 				</div>
