@@ -1,26 +1,3 @@
-h1 {
-    color: white;
-    font-size: 100px;
-}
-
-@media (min-width: 691px) {
-    #hib-contact-up-top h1 {
-        font-size: 100px;
-    }
-}
-
-@media (min-width: 500px) and (max-width: 690px) {
-    #hib-contact-up-top h1 {
-        font-size: 72px;
-    }
-}
-
-@media (max-width: 499px) {
-    #hib-contact-up-top h1 {
-        font-size: 48px;
-    }
-}
-
 #hib-contact-us {
     padding: 0px;
 }
@@ -37,12 +14,12 @@ h1 {
 }
 
 #hib-contact-us-about {
-    max-width: 1000px;
+    max-width: 700px;
     text-align: center;
     margin-bottom: 144px;
 }
 
-#hib-contact-us-about h4 {
+#hib-contact-us-about p {
     margin-bottom: 15px;
 }
 
@@ -53,7 +30,7 @@ h1 {
 }
 
 #hib-contact-submit{
-  padding-top: 20px
+  padding-top: 20px;
 }
 
 #hib-inquiry-form-outer {
@@ -118,7 +95,13 @@ h1 {
     background-color: #B15160;
     border: 2px solid #9B0926;
     color: white;
-    width: 175px;
+    width: 200px;
+}
+
+@media (max-width: 375px) {
+    .btn-contact-toggle span {
+        font-size: 14px;
+    }
 }
 
 .btn-contact-toggle:hover {
@@ -148,7 +131,7 @@ h1 {
 }
 
 #form-request-disclaimer {
-    font-size: 10px;
+    font-size: 12px;
     font-style: italic;
     padding: 0 5px;
 }

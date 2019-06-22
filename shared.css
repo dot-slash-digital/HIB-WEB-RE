@@ -1,17 +1,36 @@
+@font-face {
+    font-family: "AvenirNext-Bold";
+    src: url('fonts/AvenirNext-Bold-01.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: "AvenirNext-DemiBold";
+    src: url('fonts/AvenirNext-DemiBold-06.ttf') format('ttf');
+}
+
+@font-face {
+    font-family: "AvenirNext-Regular";
+    src: url('fonts/AvenirNext-Regular-08.ttf') format('ttf');
+}
+
 * {
 	padding: 0px;
 	margin: 0px;
-	font-family: "Open Sans", sans-serif;
 }
 
 h1 {
-	color: black;
-	font-family: "Noto Sans HK", sans-serif;
-	font-weight: bold;
+    color: white;
+    font-family: "AvenirNext-Bold", sans-serif;
 }
 
-h4 {
-	font-family: "Poppins", sans-serif;
+h2, h3, h4 {
+	color: black;
+	font-family: "AvenirNext-DemiBold", sans-serif;
+}
+
+p, span, a, label, button {
+    font-family: "AvenirNext-Regular", sans-serif;
+    font-size: 18px;
 }
 
 i {
@@ -21,6 +40,11 @@ i {
 #hib-header {
 	background-color: #FFFFFF;
     border-bottom: 1px solid #EAEAEA;
+}
+
+#hib-header .navbar a {
+    text-decoration: none;
+    text-align: center;
 }
 
 #hib-home-bottom-buttons button {
@@ -117,8 +141,9 @@ i {
     text-align: right;
 }
 
-#hib-footer p {
+#hib-footer p, #hib-footer a {
     margin: 0;
+    font-size: 16px !important;
 }
 
 .hib-footer-link {
@@ -143,10 +168,15 @@ i {
     color: black;
     margin: 5px 0 0 0;
     text-align: center;
-    font-weight: bold;
+    font-family: "AvenirNext-DemiBold", sans-serif !important;
 }
 
-@media (max-width: 404px) {
+#hib-home-bottom-buttons a:hover,
+#hib-products-bottom-buttons a:hover{
+    text-decoration: none;
+}
+
+@media (max-width: 384px) {
     #hib-home-bottom-buttons > a:nth-child(1) > button,
     #hib-products-bottom-buttons > a:nth-child(1) > button {
         margin-bottom: 5px;
@@ -180,7 +210,7 @@ i {
     }
     
     #logo-text {
-        font-size: 10px;
+        font-size: 10px !important;
     }
     
     .hib-container {
@@ -194,10 +224,28 @@ i {
     }
     
     #logo-text {
-        font-size: 8px;
+        font-size: 7.5px !important;
     }
     
     .hib-container {
         margin-top: 109px;
+    }
+}
+
+@media (min-width: 691px) {
+    #hib-contact-up-top h1, #hib-products-top h1 {
+        font-size: 100px;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 690px) {
+    #hib-contact-up-top h1, #hib-products-top h1 {
+        font-size: 72px;
+    }
+}
+
+@media (max-width: 499px) {
+    #hib-contact-up-top h1, #hib-products-top h1 {
+        font-size: 48px;
     }
 }

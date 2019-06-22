@@ -51,9 +51,6 @@
     #hib-home-use-cases .row .col-3 i {
         font-size: 48px;
     }
-    #hib-home-use-cases .row .col-3 h4 {
-        font-size: 16px;
-    }
 }
 
 .hib-home-section-title {
@@ -94,8 +91,4 @@
 
 #hib-home-bottom-text {
     margin-bottom: 20px;
-}
-
-#hib-home-bottom-buttons :first-child {
-    margin-right: 20px;
 }
