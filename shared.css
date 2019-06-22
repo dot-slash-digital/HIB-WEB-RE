@@ -105,6 +105,7 @@ i {
 
 #hib-nav .nav-link.active {
 	color: #9B0926;
+    font-weight: bold;
 }
 
 #hib-nav .nav-link:hover {
