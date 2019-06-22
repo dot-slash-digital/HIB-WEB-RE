@@ -156,7 +156,7 @@
     }
 }
 
-.hib-home-section-title {
+#hib-home-features-title {
     text-align: center;
     width: 100%;
     margin-bottom: 30px;
@@ -166,14 +166,6 @@
     margin: 0 auto 144px auto;
     max-width: 1000px;
     font-size: 18px;
-}
-
-#hib-home-features .col-4 {
-    min-height: 100px;
-}
-
-#hib-home-features .col-4:last-child {
-    min-height: 0 !important;
 }
 
 .calyx-icon {
