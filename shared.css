@@ -117,7 +117,7 @@ i {
 }
 
 #hib-footer-container {
-	background-color: #B15160;
+	background-color: #9B0926;
 }
 
 #hib-footer {
@@ -248,4 +248,19 @@ i {
     #hib-contact-up-top h1, #hib-products-top h1 {
         font-size: 48px;
     }
+}
+
+#hib-trademark-container {
+    background-color: #B15160;
+    padding: 10px 50px;
+}
+
+#hib-trademark {
+    text-align: center;
+    line-height: 1;
+}
+
+#hib-trademark span {
+    color: white;
+    font-size: 12px;
 }
