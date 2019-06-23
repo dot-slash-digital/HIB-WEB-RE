@@ -174,7 +174,7 @@ $("#hib-request-form").submit(function() {
         $("#contact-request-zip-code").val() != "" &&
         $("#contact-request-country").val() != "Choose a Country..." &&
         $("#contact-request-sample-type").val() != "Choose a Sample Type..." &&
-        $("#contact-request-application of sample").val() != "")
+        $("#contact-request-application-of-sample").val() != "")
         return true;
     else
         return false;
