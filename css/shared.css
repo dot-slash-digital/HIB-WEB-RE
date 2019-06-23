@@ -1,19 +1,19 @@
 @font-face {
     font-family: "AvenirNext-Bold";
-    src: url('fonts/AvenirNext-Bold-01.ttf') format('ttf'),
-         url('fonts/AvenirNext-Bold-01.woff') format('woff');
+    src: url('../fonts/AvenirNext-Bold-01.ttf') format('ttf'),
+         url('../fonts/AvenirNext-Bold-01.woff') format('woff');
 }
 
 @font-face {
     font-family: "AvenirNext-DemiBold";
-    src: url('fonts/AvenirNext-DemiBold-03.ttf') format('ttf'),
-         url('fonts/AvenirNext-DemiBold-03.woff') format('woff');
+    src: url('../fonts/AvenirNext-DemiBold-03.ttf') format('ttf'),
+         url('../fonts/AvenirNext-DemiBold-03.woff') format('woff');
 }
 
 @font-face {
     font-family: "AvenirNext-Regular";
-    src: url('fonts/AvenirNext-Regular-08.ttf') format('ttf'),
-         url('fonts/AvenirNext-Regular-08.woff') format('woff');
+    src: url('../fonts/AvenirNext-Regular-08.ttf') format('ttf'),
+         url('../fonts/AvenirNext-Regular-08.woff') format('woff');
 }
 
 * {
