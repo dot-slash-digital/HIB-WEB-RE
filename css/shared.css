@@ -88,8 +88,10 @@ i {
     margin: 0 0 0 auto;
 }
 
-.navbar-nav :not(:last-child) {
-	margin-right: 60px;
+@media (min-width: 768px) {
+    .navbar-nav :not(:last-child) {
+        margin-right: 60px;
+    }
 }
 
 @media (max-width: 767px) {
