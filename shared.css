@@ -6,8 +6,8 @@
 
 @font-face {
     font-family: "AvenirNext-DemiBold";
-    src: url('fonts/AvenirNext-DemiBold-06.ttf') format('ttf'),
-         url('fonts/AvenirNext-DemiBold-06.woff') format('woff');
+    src: url('fonts/AvenirNext-DemiBold-03.ttf') format('ttf'),
+         url('fonts/AvenirNext-DemiBold-03.woff') format('woff');
 }
 
 @font-face {
@@ -116,6 +116,15 @@ i {
     border: none;
 }
 
+#hib-home-top, #hib-products-top, #hib-contact-us-top {
+    margin-bottom: 144px;
+    text-align: center;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .hib-container div {
 	margin: 0 auto;
 }
@@ -217,8 +226,9 @@ i {
         font-size: 10px !important;
     }
     
-    .hib-container {
-        margin-top: 116px;
+    #hib-home-top, #hib-products-top, #hib-contact-us-top {
+        height: calc(100vh - 136px);
+        margin-top: 136px;
     }
 }
 
@@ -231,25 +241,26 @@ i {
         font-size: 7.5px !important;
     }
     
-    .hib-container {
-        margin-top: 109px;
+    #hib-home-top, #hib-products-top, #hib-contact-us-top {
+        height: calc(100vh - 107px);
+        margin-top: 107px;
     }
 }
 
 @media (min-width: 691px) {
-    #hib-contact-up-top h1, #hib-products-top h1 {
+    #hib-contact-us-top h1, #hib-products-top h1 {
         font-size: 100px;
     }
 }
 
 @media (min-width: 500px) and (max-width: 690px) {
-    #hib-contact-up-top h1, #hib-products-top h1 {
+    #hib-contact-us-top h1, #hib-products-top h1 {
         font-size: 72px;
     }
 }
 
 @media (max-width: 499px) {
-    #hib-contact-up-top h1, #hib-products-top h1 {
+    #hib-contact-us-top h1, #hib-products-top h1 {
         font-size: 48px;
     }
 }

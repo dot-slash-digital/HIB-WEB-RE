@@ -2,15 +2,14 @@
     padding: 0px;
 }
 
-#hib-contact-up-top {
-    margin-bottom: 144px;
-    height: 500px;
-    text-align: center;
-    
+#hib-contact-us-top {
     background-image: url(masthead-contact-hibiscus.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+}
+
+#hib-contact-us-top h1 {
+	position:relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 #hib-contact-us-about {

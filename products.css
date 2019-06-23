@@ -7,14 +7,7 @@ h1 {
 }
 
 #hib-products-top {
-    margin-bottom: 144px;
-    height: 500px;
-    text-align: center;
-    
     background-image: url(masthead-products.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
 #hib-products-top h1 {

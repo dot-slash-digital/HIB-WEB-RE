@@ -2,33 +2,85 @@
     padding: 0px;
 }
 
-#hib-home-jumbotron {
+#hib-home-top {
     background-image: url(masthead-hibiscus-v4-2-1920x500_c.jpg);
 }
 
 #hib-home-top {
-    max-width: 1200px;
-}
-
-#hib-home-top-left {
-    height: 480px;
-}
-
-#hib-home-top-text {
-    position: relative;
     text-align: right;
 }
 
-#hib-home-top-text h1 {
+#hib-home-top > div {
+    max-width: 1200px;
+    margin-right: 105px;
+}
+
+#hib-home-top h1 {
     color: white;
     font-size: 60px;
     margin-bottom: 15px;
+    
+    float: right;
+    width: 100%;
 }
 
-#hib-home-top-text h2 {
+#hib-home-top h2 {
     color: white;
     font-size: 48px;
     margin-bottom: 30px;
+    
+    float: right;
+    width: 100%;
+}
+
+@media (min-width: 1176px) {
+    #hib-home-top h2 {
+        padding-left: 50%;
+    }
+}
+
+@media (min-width: 940px) and (max-width: 1175px) {
+    #hib-home-top h2 {
+        padding-left: 35%;
+    }
+}
+
+@media (min-width: 820px) and (max-width: 939px) {
+    #hib-home-top > div {
+        margin-right: 45px;
+    }
+    
+    #hib-home-top h2 {
+        padding-left: 30%;
+    }
+}
+
+@media (max-width: 819px) {
+    #hib-home-top {
+        text-align: center;
+    }
+    
+    #hib-home-top h1, #hib-home-top h2, #hib-home-top a {
+        float: none !important;
+    }
+    
+    #hib-home-top > div {
+        margin: 30px auto 0 auto;
+    }
+}
+
+@media (max-width: 415px) {
+    #hib-home-top h1 {
+        font-size: 48px;
+    }
+    
+    #hib-home-top h2 {
+        font-size: 36px;
+    }
+}
+
+#hib-home-top a {
+    float: right;
 }
 
 #hib-home-description {
@@ -131,11 +183,11 @@
         flex: 0 0 33%;
     }
     #hib-home-use-cases > div:nth-child(4) {
-        margin-top: 15px;
+        margin-top: 30px;
         margin-right: 0;
     }
     #hib-home-use-cases > div:nth-child(5) {
-        margin-top: 15px;
+        margin-top: 30px;
         margin-left: 0;
     }
 }

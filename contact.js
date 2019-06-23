@@ -237,7 +237,6 @@ $(function() {
     var url = new URL(window.location.href);
     var form_type = url.searchParams.get("form");
     var product_type = url.searchParams.get("product");
-    console.log(form_type);
     
     if (form_type == "sample_request") {
         showRequestForm(2000);
@@ -277,9 +276,6 @@ $(".form-control").keyup(function() {
         $("#hib-contact-submit-request").removeClass("disabled");
     else
         $("#hib-contact-submit-request").addClass("disabled");
-    
-    console.log("inquiry: " + $("#hib-contact-submit-inquiry").hasClass("disabled"));
-    console.log("request: " + $("#hib-contact-submit-request").hasClass("disabled"));
 });
 
 // TODO
