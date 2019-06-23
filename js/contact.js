@@ -50,8 +50,10 @@ $("#hib-inquiry-form").submit(function() {
         $("#contact-inquiry-company").val() != "" &&
         $("#contact-inquiry-email-address").val() != "")
         return true;
-    else
+    else {
+        showErrorAlert("inquiry");
         return false;
+    }
 });
 
 // Submission and input validation for Sample Request form
@@ -176,8 +178,10 @@ $("#hib-request-form").submit(function() {
         $("#contact-request-sample-type").val() != "Choose a Sample Type..." &&
         $("#contact-request-application-of-sample").val() != "")
         return true;
-    else
+    else {
+        showErrorAlert("request");
         return false;
+    }
 });
 
 // Remove form validity classes if a user edits the input
@@ -278,22 +282,66 @@ $(".form-control").keyup(function() {
         $("#hib-contact-submit-request").addClass("disabled");
 });
 
+// Display alert error message when form inputs are invalid
+function showErrorAlert(formType) {
+    var errorMessage = [];
+    if (formType == "inquiry") {
+        if (!isFullNameValid($("#contact-inquiry-full-name").val()))
+            errorMessage.push("<span>Enter your full name (first and last name).</span><br />");
+        if ($("#contact-inquiry-company").val() == "")
+            errorMessage.push("<span>Enter your company name.</span><br />");
+        if (!isEmailAddressValid($("#contact-inquiry-email-address").val()))
+            errorMessage.push("<span>Enter your email address.</span><br />");
+    } else if (formType == "request") {
+        if (!isFullNameValid($("#contact-request-full-name").val()))
+            errorMessage.push("<span>Enter your full name (first and last name).</span><br />");
+        if ($("#contact-request-company").val() == "")
+            errorMessage.push("<span>Enter your company name.</span><br />");
+        if (!isEmailAddressValid($("#contact-request-email-address").val()))
+            errorMessage.push("<span>Enter your email address.</span><br />");
+        if ($("#contact-request-shipping-address").val() == "")
+            errorMessage.push("<span>Enter your shipping address.</span><br />");
+        if ($("#contact-request-city").val() == "")
+            errorMessage.push("<span>Enter your shipping city.</span><br />");
+        if ($("#contact-request-state").val() == "")
+            errorMessage.push("<span>Select your shipping state.</span><br />");
+        if (!isZipCodeValid($("#contact-request-zip-code").val()))
+            errorMessage.push("<span>Enter your shipping zip code.</span><br />");
+        if ($("#contact-request-country").val() == "")
+            errorMessage.push("<span>Select your shipping country.</span><br />");
+        if ($("#contact-request-sample-type").val() == "")
+            errorMessage.push("<span>Select your desired sample type.</span><br />");
+        if ($("#contact-request-application-of-sample").val() == "")
+            errorMessage.push("<span>Enter how you will use the sample.</span><br />");
+    }
+    
+    $("#contact-alert-text").html(errorMessage);
+    $("#contact-alert").css("display", "block");
+    $("#contact-alert").css("margin-left", "-" + $("#contact-alert").width() / 2 + "px");
+}
+
+// Hide alert error message on clicking close button
+$("#contact-alert button").click(function(e) {
+    $("#contact-alert").css("display", "none");
+});
+
 // TODO
-function isFullNameValid(full_name) {
+function isFullNameValid(fullName) {
+    return (fullName != "");
+}
+
+// TODO
+function isEmailAddressValid(emailAddress) {
+    return (emailAddress != "");
+}
+
+// TODO
+function isPhoneNumberValid(phoneNumber) {
     
 }
 
 // TODO
-function isEmailAddressValid(email_address) {
-    
-}
-
-// TODO
-function isPhoneNumberValid(phone_number) {
-    
-}
-
-// TODO
-function isZipCodeValid(zip_code) {
-    
+function isZipCodeValid(zipCode) {
+    console.log("isZipCodeValid", zipCode);
+    return (zipCode != "");
 }

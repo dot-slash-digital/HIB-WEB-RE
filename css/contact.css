@@ -134,3 +134,34 @@
     font-style: italic;
     padding: 0 5px;
 }
+
+#contact-alert {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    left: 50%;
+}
+
+#contact-alert-text {
+    margin-right: 52px;
+}
+
+#contact-alert button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 12px 20px;
+    color: inherit;
+}
+
+@media (min-width: 650px) {
+    #contact-alert {
+        margin-top: 162px;
+    }
+}
+
+@media (max-width: 649px) {
+    #contact-alert {
+        margin-top: 133px;
+    }
+}
