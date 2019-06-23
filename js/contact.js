@@ -6,8 +6,12 @@ $(document).ready(function() {
 
 // Submission and input validation for General Inquiry form
 $("#hib-inquiry-form").submit(function() {
+    var validFN = isFullNameValid($("#contact-inquiry-full-name").val());
+    var validPN = isPhoneNumberValid($("#contact-inquiry-phone-number").val());
+    var validEA = isEmailAddressValid($("#contact-inquiry-email-address").val());
+    
     // Full Name (required)
-    if ($("#contact-inquiry-full-name").val() == "") {
+    if (validFN == false) {
         $("#contact-inquiry-full-name").removeClass("is-valid");
         $("#contact-inquiry-full-name").addClass("is-invalid");
     } else {
@@ -25,7 +29,7 @@ $("#hib-inquiry-form").submit(function() {
     }
     
     // Email Address (required)
-    if ($("#contact-inquiry-email-address").val() == "") {
+    if (validEA == false) {
         $("#contact-inquiry-email-address").removeClass("is-valid");
         $("#contact-inquiry-email-address").addClass("is-invalid");
     } else {
@@ -34,10 +38,14 @@ $("#hib-inquiry-form").submit(function() {
     }
     
     // Phone Number (optional)
-    if ($("#contact-inquiry-phone-number").val() == "")
-        $("#contact-inquiry-phone-number").removeClass("is-valid");
-    else
+    if (validPN == "valid") {
+        $("#contact-inquiry-phone-number").removeClass("is-invalid");
         $("#contact-inquiry-phone-number").addClass("is-valid");
+    } else if (validPN == "empty") {
+        $("#contact-inquiry-phone-number").removeClass("is-valid");
+        $("#contact-inquiry-phone-number").removeClass("is-invalid");
+    } else
+        $("#contact-inquiry-phone-number").addClass("is-invalid");
     
     // Message (optional)
     if ($("#contact-inquiry-message").val() == "")
@@ -46,9 +54,10 @@ $("#hib-inquiry-form").submit(function() {
         $("#contact-inquiry-message").addClass("is-valid");
     
     // Submit form
-    if ($("#contact-inquiry-full-name").val() != "" &&
+    if (validFN == true &&
         $("#contact-inquiry-company").val() != "" &&
-        $("#contact-inquiry-email-address").val() != "")
+        validEA == true &&
+        (validPN == "valid" || validPN == "empty"))
         return true;
     else {
         showErrorAlert("inquiry");
@@ -58,8 +67,14 @@ $("#hib-inquiry-form").submit(function() {
 
 // Submission and input validation for Sample Request form
 $("#hib-request-form").submit(function() {
+    var validFN = isFullNameValid($("#contact-request-full-name").val());
+    var validPN = isPhoneNumberValid($("#contact-request-phone-number").val());
+    var validEA = isEmailAddressValid($("#contact-request-email-address").val());
+    var validZC = isZipCodeValid($("#contact-request-zip-code").val());
+    var inUS = ($("#contact-request-country").val() == "Choose a Country..." || $("#contact-request-country").val() == "United States");
+    
     // Full Name (required)
-    if ($("#contact-request-full-name").val() == "") {
+    if (validFN == false) {
         $("#contact-request-full-name").removeClass("is-valid");
         $("#contact-request-full-name").addClass("is-invalid");
     } else {
@@ -77,7 +92,7 @@ $("#hib-request-form").submit(function() {
     }
     
     // Email Address (required)
-    if ($("#contact-request-email-address").val() == "") {
+    if (validEA == false) {
         $("#contact-request-email-address").removeClass("is-valid");
         $("#contact-request-email-address").addClass("is-invalid");
     } else {
@@ -86,10 +101,14 @@ $("#hib-request-form").submit(function() {
     }
     
     // Phone Number (optional)
-    if ($("#contact-request-phone-number").val() == "")
-        $("#contact-request-phone-number").removeClass("is-valid");
-    else
+    if (validPN == "valid") {
+        $("#contact-request-phone-number").removeClass("is-invalid");
         $("#contact-request-phone-number").addClass("is-valid");
+    } else if (validPN == "empty") {
+        $("#contact-request-phone-number").removeClass("is-valid");
+        $("#contact-request-phone-number").removeClass("is-invalid");
+    } else
+        $("#contact-request-phone-number").addClass("is-invalid");
     
     // Shipping Address Line 1 (required)
     if ($("#contact-request-shipping-address").val() == "") {
@@ -116,7 +135,10 @@ $("#hib-request-form").submit(function() {
     }
     
     // State (required)
-    if ($("#contact-request-state").val() == "Choose a State...") {
+    if (inUS == false) {
+        $("#contact-request-state").removeClass("is-valid");
+        $("#contact-request-state").removeClass("is-invalid");
+    } else if ($("#contact-request-state").val() == "Choose a State...") {
         $("#contact-request-state").removeClass("is-valid");
         $("#contact-request-state").addClass("is-invalid");
     } else {
@@ -125,7 +147,10 @@ $("#hib-request-form").submit(function() {
     }
     
     // Zip Code (required)
-    if ($("#contact-request-zip-code").val() == "") {
+    if (inUS == false) {
+        $("#contact-request-zip-code").removeClass("is-valid");
+        $("#contact-request-zip-code").removeClass("is-invalid");
+    } else if (validZC == false) {
         $("#contact-request-zip-code").removeClass("is-valid");
         $("#contact-request-zip-code").addClass("is-invalid");
     } else {
@@ -167,16 +192,17 @@ $("#hib-request-form").submit(function() {
         $("#contact-request-message").addClass("is-valid");
     
     // Submit form
-    if ($("#contact-request-full-name").val() != "" &&
+    if (validFN == true &&
         $("#contact-request-company").val() != "" &&
-        $("#contact-request-email-address").val() != "" &&
+        validEA == true &&
         $("#contact-request-shipping-address").val() != "" &&
         $("#contact-request-city").val() != "" &&
-        $("#contact-request-state").val() != "Choose a State..." &&
-        $("#contact-request-zip-code").val() != "" &&
+        (inUS == false || $("#contact-request-state").val() != "Choose a State...") &&
+        (inUS == false || validZC == true) &&
         $("#contact-request-country").val() != "Choose a Country..." &&
         $("#contact-request-sample-type").val() != "Choose a Sample Type..." &&
-        $("#contact-request-application-of-sample").val() != "")
+        $("#contact-request-application-of-sample").val() != "" &&
+        (validPN == "valid" || validPN == "empty"))
         return true;
     else {
         showErrorAlert("request");
@@ -285,28 +311,45 @@ $(".form-control").keyup(function() {
 // Display alert error message when form inputs are invalid
 function showErrorAlert(formType) {
     var errorMessage = [];
+    var validPN = isPhoneNumberValid($("#contact-" + formType + "-phone-number").val());
+    var validFN = isFullNameValid($("#contact-" + formType + "-full-name").val());
+    var validEA = isEmailAddressValid($("#contact-" + formType + "-email-address").val());
+    
     if (formType == "inquiry") {
-        if (!isFullNameValid($("#contact-inquiry-full-name").val()))
+        if (validFN == false)
             errorMessage.push("<span>Enter your full name (first and last name).</span><br />");
         if ($("#contact-inquiry-company").val() == "")
             errorMessage.push("<span>Enter your company name.</span><br />");
-        if (!isEmailAddressValid($("#contact-inquiry-email-address").val()))
+        if ($("#contact-inquiry-email-address").val() == "")
             errorMessage.push("<span>Enter your email address.</span><br />");
+        else if (validEA == false)
+            errorMessage.push("<span>Enter a valid business email address.</span><br />");
+        if (validPN != "valid" && validPN != "empty")
+            errorMessage.push("<span>" + validPN + "</span><br />");
     } else if (formType == "request") {
-        if (!isFullNameValid($("#contact-request-full-name").val()))
+        var validZC = isZipCodeValid($("#contact-request-zip-code").val());
+        var inUS = ($("#contact-request-country").val() == "Choose a Country..." || $("#contact-request-country").val() == "United States");
+        
+        if (validFN == false)
             errorMessage.push("<span>Enter your full name (first and last name).</span><br />");
         if ($("#contact-request-company").val() == "")
             errorMessage.push("<span>Enter your company name.</span><br />");
-        if (!isEmailAddressValid($("#contact-request-email-address").val()))
+        if ($("#contact-request-email-address").val() == "")
             errorMessage.push("<span>Enter your email address.</span><br />");
+        else if (validEA == false)
+            errorMessage.push("<span>Enter a valid business email address.</span><br />");
+        if (validPN != "valid" && validPN != "empty")
+            errorMessage.push("<span>" + validPN + "</span><br />");
         if ($("#contact-request-shipping-address").val() == "")
             errorMessage.push("<span>Enter your shipping address.</span><br />");
         if ($("#contact-request-city").val() == "")
             errorMessage.push("<span>Enter your shipping city.</span><br />");
-        if ($("#contact-request-state").val() == "")
+        if (inUS == true && $("#contact-request-state").val() == "")
             errorMessage.push("<span>Select your shipping state.</span><br />");
-        if (!isZipCodeValid($("#contact-request-zip-code").val()))
+        if (inUS == true && $("#contact-request-zip-code").val() == "")
             errorMessage.push("<span>Enter your shipping zip code.</span><br />");
+        else if (inUS == true && validZC == false)
+            errorMessage.push("<span>Enter a valid zip code (e.g. ##### or #####-####).</span><br />");
         if ($("#contact-request-country").val() == "")
             errorMessage.push("<span>Select your shipping country.</span><br />");
         if ($("#contact-request-sample-type").val() == "")
@@ -321,27 +364,87 @@ function showErrorAlert(formType) {
 }
 
 // Hide alert error message on clicking close button
-$("#contact-alert button").click(function(e) {
+$("#contact-alert button").click(function() {
     $("#contact-alert").css("display", "none");
 });
 
-// TODO
 function isFullNameValid(fullName) {
-    return (fullName != "");
+    return (fullName.indexOf(' ') > 0 && fullName.indexOf(' ') != (fullName.length - 1));
 }
 
-// TODO
 function isEmailAddressValid(emailAddress) {
+    var atIndex = emailAddress.indexOf('@');
+    if (atIndex < 1)
+        return false;
+    else {
+        prefix = emailAddress.substring(0, atIndex);
+        suffix = emailAddress.substring(atIndex + 1).toLowerCase();
+
+        if (prefix.length == 0 || suffix.length == 0 || suffix.indexOf('.') < 0)
+            return false;
+        else {
+            suffix = suffix.substring(0, suffix.indexOf('.'));
+            var substrings = [
+                "gmail",
+                "yahoo",
+                "icloud",
+                "me",
+                "hotmail",
+                "att",
+                "ymail",
+                "outlook",
+                "live",
+                "msn",
+                "aol",
+                "mail",
+                "yandex",
+                "list",
+                "elhillel"
+            ];
+            
+            for (var i = 0; i < substrings.length; i++) {
+                if (suffix.indexOf(substrings[i]) == 0)
+                    return false;
+            }
+            return true;
+        }
+    }
     return (emailAddress != "");
 }
 
-// TODO
 function isPhoneNumberValid(phoneNumber) {
+    if (phoneNumber == "")
+        return "empty";
+    else {
+        phoneNumber = phoneNumber.replace(/[^0-9]/g, '');
+        if (phoneNumber.length < 7)
+            return "Enter a valid phone number."
+        else if (phoneNumber.length < 10)
+            return "Add a valid area code to your phone number.";
+    }
     
+    return "valid";
 }
 
-// TODO
 function isZipCodeValid(zipCode) {
-    console.log("isZipCodeValid", zipCode);
-    return (zipCode != "");
+    if ((zipCode.length == 5 && zipCode.replace(/[^0-9]/g, '').length == 5) || (zipCode.length == 10 && zipCode.replace(/[^0-9]/g, '').length == 9 && zipCode.indexOf('-') == 5))
+        return true;
+    else
+        return false;
 }
+
+// disable State and Zip Code input fields if selected country is not United States
+$("#contact-request-country").change(function() {
+    if ($("#contact-request-country").val() != "Choose a Country..." && $("#contact-request-country").val() != "United States") {
+        $("#contact-request-state").prop("disabled", true);
+        $("#contact-request-zip-code").prop("disabled", true);
+        $("#contact-request-state").removeClass("is-valid");
+        $("#contact-request-state").removeClass("is-invalid");
+        $("#contact-request-zip-code").removeClass("is-valid");
+        $("#contact-request-zip-code").removeClass("is-invalid");
+    }
+    else {
+        $("#contact-request-state").prop("disabled", false);
+        $("#contact-request-zip-code").prop("disabled", false);
+    }
+});
