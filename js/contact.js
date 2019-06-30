@@ -275,9 +275,9 @@ $(function() {
     }
     
     if (product_type == "powder")
-        $("#contact-request-sample-type").val("Hibiscus Extract Powder");
+        $("#contact-request-sample-type").val("Organic Hibiscus Extract Powder");
     else if (product_type == "liquid")
-        $("#contact-request-sample-type").val("Hibiscus Concentrated Liquid Extract");
+        $("#contact-request-sample-type").val("Organic Hibiscus Concentrated Liquid Extract");
 });
 
 // Enable submit button when all required fields are valid
