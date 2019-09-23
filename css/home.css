@@ -15,22 +15,22 @@
     margin-right: 105px;
 }
 
-#hib-home-top h1 {
-    color: white;
-    font-size: 60px;
-    margin-bottom: 15px;
-    
+#hib-home-top h1,
+#hib-home-top h2 {
     float: right;
     width: 100%;
 }
 
+#hib-home-top h1 {
+    color: #9b0926;
+    font-size: 60px;
+    margin-bottom: 15px;
+}
+
 #hib-home-top h2 {
-    color: white;
+    color: #b15160;
     font-size: 48px;
     margin-bottom: 30px;
-    
-    float: right;
-    width: 100%;
 }
 
 @media (min-width: 1176px) {
