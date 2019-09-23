@@ -55,8 +55,21 @@ h1 {
     }
 }
 
+#hib-products-descriptions h2 {
+    color: #9b0926;
+}
+
+#hib-products-descriptions h4 {
+    color: #b15160;
+}
+
 @media (min-width: 768px) {
     #hib-products-descriptions h2 {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+    
+    #hib-products-descriptions h4 {
         text-align: left;
         margin-bottom: 30px;
     }
@@ -64,10 +77,14 @@ h1 {
 
 @media (max-width: 767px) {
     #hib-products-descriptions h2 {
-        text-align: left;
-        margin-top: 30px;
-        margin-bottom: 15px;
         text-align: center;
+        margin-top: 30px;
+        margin-bottom: 5px;
+    }
+    
+    #hib-products-descriptions h4 {
+        text-align: center;
+        margin-bottom: 15px;
     }
 }
 

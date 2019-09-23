@@ -18,6 +18,12 @@
     margin-bottom: 144px;
 }
 
+#hib-contact-us-about p:nth-child(1) {
+    font-weight: bold;
+    margin-bottom: 45px !important;
+    color: #9b0926;
+}
+
 #hib-contact-us-about p {
     margin-bottom: 15px;
 }
