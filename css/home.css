@@ -22,14 +22,14 @@
 }
 
 #hib-home-top h1 {
-    color: #9b0926;
+    color: white;
     font-size: 60px;
     margin-bottom: 15px;
 }
 
 #hib-home-top h2 {
-    color: #b15160;
-    font-size: 48px;
+    color: white;
+    font-size: 45px;
     margin-bottom: 30px;
 }
 
@@ -84,7 +84,7 @@
 }
 
 #hib-home-description {
-    margin-bottom: 72px;
+    margin-bottom: 144px;
     max-width: 1200px;
 }
 
@@ -150,63 +150,6 @@
     }
 }
 
-#hib-home-use-cases {
-    margin-bottom: 144px;
-    max-width: 1200px;
-}
-
-#hib-home-use-cases div {
-    display: block;
-}
-
-@media (min-width: 1075px) {
-    #hib-home-use-cases > div:nth-child(1),
-    #hib-home-use-cases > div:nth-child(2),
-    #hib-home-use-cases > div:nth-child(3),
-    #hib-home-use-cases > div:nth-child(4),
-    #hib-home-use-cases > div:nth-child(5) {
-        flex: 0 0 20%;
-    }
-}
-
-@media (min-width: 475px) and (max-width: 1074px) {
-    #hib-home-use-cases {
-        max-width: 650px;
-    }
-    
-    #hib-home-use-cases > div:nth-child(1),
-    #hib-home-use-cases > div:nth-child(2),
-    #hib-home-use-cases > div:nth-child(3),
-    #hib-home-use-cases > div:nth-child(4),
-    #hib-home-use-cases > div:nth-child(5) {
-        flex: 0 0 33%;
-    }
-    #hib-home-use-cases > div:nth-child(4) {
-        margin-top: 30px;
-        margin-right: 0;
-    }
-    #hib-home-use-cases > div:nth-child(5) {
-        margin-top: 30px;
-        margin-left: 0;
-    }
-}
-
-@media (max-width: 474px) {
-    #hib-home-use-cases > div:nth-child(1),
-    #hib-home-use-cases > div:nth-child(2),
-    #hib-home-use-cases > div:nth-child(3),
-    #hib-home-use-cases > div:nth-child(4),
-    #hib-home-use-cases > div:nth-child(5) {
-        flex: 0 0 50%;
-    }
-    
-    #hib-home-use-cases > div:nth-child(3),
-    #hib-home-use-cases > div:nth-child(4),
-    #hib-home-use-cases > div:nth-child(5) {
-        margin-top: 15px;
-    }
-}
-
 #hib-home-features-title {
     color: #9b0926;
     text-align: center;
@@ -240,12 +183,60 @@
     margin-bottom: 20px;
 }
 
-#hib-home-use-cases .col {
-    text-align: center;
+/* Home Page - Use Cases Section */
+
+#hib-home-use-cases {
+    margin: 100px 0;
+    padding: 100px 50px;
+    background-color: lightgray;
 }
 
-#hib-home-use-cases .col i {
-    width: 100%;
-    font-size: 72px;
-    margin-bottom: 5px;
+#hib-home-use-cases > .col {
+    margin: 0 auto 0 0;
+    max-width: 700px;
+}
+
+#hib-home-use-cases h1 {
+    color: #9B0926;
+}
+
+#hib-home-use-cases > .col > .row:nth-child(3) > .icon {
+    border-radius: 50%;
+    text-align: center;
+    width: 112px;
+    height: 112px;
+    transition: 0.5s all;
+}
+
+#hib-home-use-cases > .col > .row:nth-child(3) > .icon.active {
+    background-color: rgba(155, 9, 38, 0.25);
+}
+
+#hib-home-use-cases > .col > .row:nth-child(3) > .icon:not(.active):hover {
+    background-color: rgba(155, 9, 38, 0.1);
+}
+
+#hib-home-use-cases > .col > .row:nth-child(3) > .icon > span > i {
+    font-size: 68px;
+    padding: 22px 0;
+    color: rgba(155, 9, 38, 0.5);
+    transition: 0.5s all;
+}
+
+#hib-home-use-cases > .col > .row:nth-child(3) > .arrow {
+    height: 112px;
+    padding: 40px 5px;
+}
+
+#hib-home-use-cases > .col > .row:nth-child(3) > .arrow > span > i {
+    font-size: 32px;
+    color: #9B0926;
+}
+
+#hib-home-use-cases > .col > .row:nth-child(3) > .icon.active > span > i {
+    color: #9B0926;
+}
+
+#hib-home-use-cases > .col > .row:nth-child(3) > .icon:hover > span > i {
+    color: rgba(155, 9, 38, 0.75);
 }
