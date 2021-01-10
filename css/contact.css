@@ -71,7 +71,7 @@
     .form-row {
         margin-bottom: 0 !important;
     }
-    
+
     .form-group {
         margin-bottom: 16px !important;
     }
@@ -81,19 +81,9 @@
     height: 50px;
 }
 
-.btn:focus,.btn.btn-primary.disabled {
+.btn:focus {
    outline: none !important;
    box-shadow: none;
-}
-
-.btn.btn-primary.disabled:active {
-  color: white;
-  border: 2px solid grey !important;
-  background-color: grey !important;
-}
-.btn.btn-primary.disabled {
-    background-color: grey;
-    border: 2px solid grey;
 }
 
 .btn-contact-toggle {
@@ -125,10 +115,6 @@
 .btn-contact-toggle.focus {
     outline: none;
     box-shadow: none;
-}
-
-#hib-contact-submit-inquiry.disabled, #hib-contact-submit-request.disabled {
-    cursor: not-allowed;
 }
 
 .form-asterisk {
@@ -170,4 +156,9 @@
     #contact-alert {
         margin-top: 133px;
     }
+}
+
+input:focus, textarea:focus {
+    border-color: #848484 !important;
+    box-shadow: 0 0 0 0.2rem rgb(132 132 132 / 0.25) !important;
 }

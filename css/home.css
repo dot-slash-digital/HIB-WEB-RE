@@ -33,25 +33,9 @@
     margin-bottom: 30px;
 }
 
-@media (min-width: 1176px) {
+@media (min-width: 820px) {
     #hib-home-top h2 {
-        padding-left: 50%;
-    }
-}
-
-@media (min-width: 940px) and (max-width: 1175px) {
-    #hib-home-top h2 {
-        padding-left: 35%;
-    }
-}
-
-@media (min-width: 820px) and (max-width: 939px) {
-    #hib-home-top > div {
-        margin-right: 45px;
-    }
-    
-    #hib-home-top h2 {
-        padding-left: 30%;
+        width: 550px;
     }
 }
 
@@ -59,11 +43,11 @@
     #hib-home-top {
         text-align: center;
     }
-    
+
     #hib-home-top h1, #hib-home-top h2, #hib-home-top a {
         float: none !important;
     }
-    
+
     #hib-home-top > div {
         margin: 30px auto 0 auto;
     }
@@ -73,7 +57,7 @@
     #hib-home-top h1 {
         font-size: 48px;
     }
-    
+
     #hib-home-top h2 {
         font-size: 36px;
     }
@@ -144,7 +128,7 @@
     #hib-home-description > div:nth-child(1) {
         text-align: center;
     }
-    
+
     #hib-home-description > div:nth-child(2) {
         display: none !important;
     }
@@ -158,7 +142,7 @@
 }
 
 #hib-home-features {
-    margin: 0 auto 144px auto;
+    margin: 0 auto 100px auto;
     max-width: 1000px;
     font-size: 18px;
 }
@@ -186,57 +170,91 @@
 /* Home Page - Use Cases Section */
 
 #hib-home-use-cases {
-    margin: 100px 0;
+    margin: 144px 0;
     padding: 100px 50px;
-    background-color: lightgray;
+    background-color: #B15160;
 }
 
 #hib-home-use-cases > .col {
-    margin: 0 auto 0 0;
-    max-width: 700px;
+    max-width: 900px;
 }
 
 #hib-home-use-cases h1 {
-    color: #9B0926;
+    color: white;
 }
 
-#hib-home-use-cases > .col > .row:nth-child(3) > .icon {
-    border-radius: 50%;
+#hib-home-use-cases .icon {
     text-align: center;
-    width: 112px;
-    height: 112px;
-    transition: 0.5s all;
 }
 
-#hib-home-use-cases > .col > .row:nth-child(3) > .icon.active {
-    background-color: rgba(155, 9, 38, 0.25);
-}
-
-#hib-home-use-cases > .col > .row:nth-child(3) > .icon:not(.active):hover {
-    background-color: rgba(155, 9, 38, 0.1);
-}
-
-#hib-home-use-cases > .col > .row:nth-child(3) > .icon > span > i {
+#hib-home-use-cases .icon > span > i {
     font-size: 68px;
-    padding: 22px 0;
-    color: rgba(155, 9, 38, 0.5);
-    transition: 0.5s all;
-}
-
-#hib-home-use-cases > .col > .row:nth-child(3) > .arrow {
-    height: 112px;
-    padding: 40px 5px;
-}
-
-#hib-home-use-cases > .col > .row:nth-child(3) > .arrow > span > i {
-    font-size: 32px;
     color: #9B0926;
 }
 
-#hib-home-use-cases > .col > .row:nth-child(3) > .icon.active > span > i {
-    color: #9B0926;
+#logo-text {
+    color: black;
+    margin-top: 12px;
+    text-align: center;
+    font-family: "AvenirNext-DemiBold", sans-serif !important;
+    width: 100%;
 }
 
-#hib-home-use-cases > .col > .row:nth-child(3) > .icon:hover > span > i {
-    color: rgba(155, 9, 38, 0.75);
+#hib-features-banner {
+    margin-bottom: 144px;
+    padding: 50px 16px;
+}
+
+#hib-features-banner .contents {
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#hib-home-features {
+    padding: 0 16px;
+}
+
+#hib-food-applications {
+    margin-bottom: 144px;
+    text-align: center;
+}
+
+#hib-food-applications h1 {
+    color: #9B0926;
+    margin: 0 auto 30px auto;
+}
+
+#hib-food-applications .col {
+    padding: 0;
+}
+
+#hib-food-applications .col > .row > .col {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 144px 0;
+}
+
+#hib-food-applications h3 {
+    color: white;
+}
+
+#hib-food-applications .col > .row > .col:nth-child(1) {
+    background-image: url("../images/beverages.jpg");
+}
+
+#hib-food-applications .col > .row > .col:nth-child(2) {
+    background-image: url("../images/frozen-dessert.jpg");
+}
+
+#hib-food-applications .col > .row > .col:nth-child(3) {
+    background-image: url("../images/yogurt.jpg");
+}
+
+#hib-food-applications .col > .row > .col:nth-child(4) {
+    background-image: url("../images/cocktails.jpg");
+}
+
+#hib-food-applications .col > .row > .col:nth-child(5) {
+    background-image: url("../images/supplements.jpg");
 }

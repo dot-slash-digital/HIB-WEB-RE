@@ -26,10 +26,6 @@ h1 {
 	margin-bottom: 144px;
 }
 
-#hib-products-descriptions .row:nth-child(1) {
-    margin-bottom: 60px;
-}
-
 .hib-products-descriptions-image {
 	overflow-y: hidden;
 }
@@ -68,7 +64,7 @@ h1 {
         text-align: left;
         margin-bottom: 5px;
     }
-    
+
     #hib-products-descriptions h4 {
         text-align: left;
         margin-bottom: 30px;
@@ -81,7 +77,7 @@ h1 {
         margin-top: 30px;
         margin-bottom: 5px;
     }
-    
+
     #hib-products-descriptions h4 {
         text-align: center;
         margin-bottom: 15px;
@@ -103,4 +99,24 @@ h1 {
 
 #hib-products-descriptions .row .col-md-7 p {
     text-align: left;
+}
+
+#hib-products-descriptions > .row:nth-child(1) {
+    margin-bottom: 60px;
+}
+
+.calyx-icon {
+    height: 20px;
+    float: left;
+    padding-right: 5px;
+    margin-top: 2px;
+}
+
+#powder-description-grid > .col-sm-6,
+#powder-description-grid > .col-sm-6 .col-1 {
+    padding: 0 !important;
+}
+
+#powder-description-grid > .col-sm-6 .col {
+    padding: 0 24px 0 12px;
 }

@@ -36,10 +36,6 @@ p, span, a, label, button {
     font-size: 18px;
 }
 
-i {
-    color: #9B0926;
-}
-
 #hib-header {
 	background-color: #FFFFFF;
     border-bottom: 1px solid #EAEAEA;
@@ -47,7 +43,7 @@ i {
 
 #hib-header .navbar a {
     text-decoration: none;
-    text-align: center;
+    text-align: right;
 }
 
 #hib-home-bottom-buttons button {
@@ -78,8 +74,7 @@ i {
 }
 
 #hib-nav {
-	padding-left: 0;
-    padding-right: 0;
+	padding: 15px 0;
     max-width: 1200px;
     margin: 0 auto;
 }
@@ -103,6 +98,7 @@ i {
 #hib-nav .nav-link {
     font-size: 18px;
     color: #989898;
+    padding-right: 0.75rem;
 }
 
 #hib-nav .nav-link.active {
@@ -114,24 +110,32 @@ i {
     color: #B15160;
 }
 
-.navbar-toggler {
+.navbar-toggler,
+.navbar-toggler:focus {
+    outline: none;
     border: none;
 }
 
 #hib-home-top, #hib-products-top, #hib-contact-us-top {
     margin-bottom: 144px;
     text-align: center;
-    
+
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+}
+
+@media (max-width: 819px) {
+    #hib-home-top h2 {
+        max-width: 550px;
+    }
 }
 
 .hib-container div {
 	margin: 0 auto;
 }
 
-#hib-footer-container {
+#hib-footer-container, #hib-features-banner {
 	background-color: #9B0926;
 }
 
@@ -179,13 +183,6 @@ i {
     text-decoration: underline;
 }
 
-#logo-text {
-    color: black;
-    margin: 5px 0 0 0;
-    text-align: center;
-    font-family: "AvenirNext-DemiBold", sans-serif !important;
-}
-
 #hib-home-bottom-buttons a:hover,
 #hib-products-bottom-buttons a:hover{
     text-decoration: none;
@@ -198,55 +195,34 @@ i {
     }
 }
 
-@media (min-width: 505px) and (max-width: 775px) {
+@media (min-width: 565px) and (max-width: 840px) {
     #hib-footer-left, #hib-footer-right {
         min-width: 50%;
     }
-    
+
     #hib-footer-center {
         display: none !important;
     }
 }
 
-@media (max-width: 504px) {
-    #hib-footer-left {
+@media (max-width: 564px) {
+    #hib-footer-left, #hib-footer-center, #hib-footer-right {
         min-width: 100%;
         text-align: center;
     }
-    
+
     #hib-footer-center, #hib-footer-right {
-        display: none !important;
+        margin-top: 18px;
     }
 }
 
-@media (min-width: 650px) {
-    #hib-logo {
-        height: 100px;
-    }
-    
-    #logo-text {
-        font-size: 10px !important;
-    }
-    
-    #hib-home-top, #hib-products-top, #hib-contact-us-top {
-        height: calc(100vh - 136px);
-        margin-top: 136px;
-    }
+#hib-logo {
+    height: 70px;
 }
 
-@media (max-width: 649px) {
-    #hib-logo {
-        height: 75px;
-    }
-    
-    #logo-text {
-        font-size: 7.5px !important;
-    }
-    
-    #hib-home-top, #hib-products-top, #hib-contact-us-top {
-        height: calc(100vh - 107px);
-        margin-top: 107px;
-    }
+#hib-home-top, #hib-products-top, #hib-contact-us-top {
+    height: calc(100vh - 100px);
+    margin-top: 100px;
 }
 
 @media (min-width: 691px) {
