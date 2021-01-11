@@ -35,7 +35,7 @@
 
 @media (min-width: 820px) {
     #hib-home-top h2 {
-        width: 550px;
+        width: 540px;
     }
 }
 
@@ -240,21 +240,21 @@
 }
 
 #hib-food-applications .col > .row > .col:nth-child(1) {
-    background-image: url("../images/beverages.jpg");
+    background-image: url("../images/beverages_v2.jpg");
 }
 
 #hib-food-applications .col > .row > .col:nth-child(2) {
-    background-image: url("../images/frozen-dessert.jpg");
+    background-image: url("../images/frozen-dessert_v2.jpg");
 }
 
 #hib-food-applications .col > .row > .col:nth-child(3) {
-    background-image: url("../images/yogurt.jpg");
+    background-image: url("../images/yogurt_v2.jpg");
 }
 
 #hib-food-applications .col > .row > .col:nth-child(4) {
-    background-image: url("../images/cocktails.jpg");
+    background-image: url("../images/cocktails_v2.jpg");
 }
 
 #hib-food-applications .col > .row > .col:nth-child(5) {
-    background-image: url("../images/supplements.jpg");
+    background-image: url("../images/supplements_v2.jpg");
 }
