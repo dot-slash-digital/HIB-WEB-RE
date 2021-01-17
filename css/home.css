@@ -29,19 +29,23 @@
 
 #hib-home-top h2 {
     color: white;
-    font-size: 45px;
+    font-size: 42px;
     margin-bottom: 30px;
 }
 
 @media (min-width: 820px) {
     #hib-home-top h2 {
-        width: 540px;
+        width: 650px;
     }
 }
 
 @media (max-width: 819px) {
     #hib-home-top {
         text-align: center;
+    }
+
+    #hib-home-top h2 {
+        font-size: 36px;
     }
 
     #hib-home-top h1, #hib-home-top h2, #hib-home-top a {
@@ -59,7 +63,7 @@
     }
 
     #hib-home-top h2 {
-        font-size: 36px;
+        font-size: 30px;
     }
 }
 
