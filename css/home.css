@@ -240,7 +240,9 @@
 }
 
 #hib-food-applications h3 {
+    font-size: 36px;
     color: white;
+    padding: 0 8px;
 }
 
 #hib-food-applications .col > .row > .col:nth-child(1) {
@@ -261,4 +263,49 @@
 
 #hib-food-applications .col > .row > .col:nth-child(5) {
     background-image: url("../images/supplements_v2.jpg");
+}
+
+#hib-features-banner .contents {
+    display: grid;
+}
+
+#hib-features-banner img {
+    height: 80px;
+    margin: 0 auto;
+}
+
+@media (min-width: 801px) {
+    #hib-features-banner .contents {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}
+
+@media (min-width: 351px) and (max-width: 800px) {
+    #hib-features-banner .contents {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    #hib-features-banner img:nth-child(1),
+    #hib-features-banner img:nth-child(2),
+    #hib-features-banner img:nth-child(3),
+    #hib-features-banner img:nth-child(4) {
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 350px) {
+    #hib-features-banner .contents {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    #hib-features-banner img:nth-child(1),
+    #hib-features-banner img:nth-child(2),
+    #hib-features-banner img:nth-child(3),
+    #hib-features-banner img:nth-child(4),
+    #hib-features-banner img:nth-child(5),
+    #hib-features-banner img:nth-child(6) {
+        margin-bottom: 16px;
+    }
 }
