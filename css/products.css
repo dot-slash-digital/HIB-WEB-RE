@@ -26,26 +26,37 @@ h1 {
 	margin-bottom: 144px;
 }
 
-.hib-products-descriptions-image {
+.hib-powder-descriptions-image,
+.hib-liquid-descriptions-image {
 	overflow-y: hidden;
 }
 
 @media (min-width: 768px) {
-    .hib-products-descriptions-image img {
+    .hib-powder-descriptions-image img,
+    .hib-liquid-descriptions-image img {
         width: 100%;
+    }
+
+    .hib-powder-descriptions-image img {
         padding-left: 48px;
+    }
+
+    .hib-liquid-descriptions-image img {
+        padding-right: 48px;
     }
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
-    .hib-products-descriptions-image img {
-        width: 75%;
+    .hib-powder-descriptions-image img,
+    .hib-liquid-descriptions-image img {
+        width: 50%;
         padding: 0;
     }
 }
 
 @media (max-width: 399px) {
-    .hib-products-descriptions-image img {
+    .hib-powder-descriptions-image img,
+    .hib-liquid-descriptions-image img {
         width: 100%;
         padding: 0;
     }
