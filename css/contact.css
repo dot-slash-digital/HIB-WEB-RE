@@ -1,164 +1,165 @@
 #hib-contact-us {
-    padding: 0px;
+  padding: 0px;
 }
 
 #hib-contact-us-top {
-    background-image: url('../images/background-contact_v2.jpg');
+  background-image: url("../images/background-contact_v2.jpg");
 }
 
 #hib-contact-us-top h1 {
-	position:relative;
-	top: 50%;
-	transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #hib-contact-us-about {
-    max-width: 700px;
-    text-align: center;
-    margin-bottom: 144px;
+  max-width: 700px;
+  text-align: center;
+  margin-bottom: 144px;
 }
 
 #hib-contact-us-about p:nth-child(1) {
-    font-weight: bold;
-    margin-bottom: 45px !important;
-    color: #9b0926;
+  font-weight: bold;
+  margin-bottom: 45px !important;
+  color: #9b0926;
 }
 
 #hib-contact-us-about p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 #hib-contact-us-buttons {
-    text-align: center;
-    margin-bottom: 144px;
-    flex-grow: 0;
+  text-align: center;
+  margin-bottom: 144px;
+  flex-grow: 0;
 }
 
-#hib-contact-submit{
+#hib-contact-submit {
   padding-top: 20px;
 }
 
 #hib-inquiry-form-outer {
-    display: block;
+  display: block;
 }
 
 #hib-request-form-outer {
-    display: none;
+  display: none;
 }
 
-#hib-inquiry-form, #hib-request-form {
-    max-width: 700px;
-    margin-bottom: 144px;
-    margin: 0 auto 144px auto;
+#hib-inquiry-form,
+#hib-request-form {
+  max-width: 700px;
+  margin-bottom: 144px;
+  margin: 0 auto 144px auto;
 }
 
-#hib-form-input{
-  display:flex;
+#hib-form-input {
+  display: flex;
 }
 
 #hib-form-input-padding-page-two {
   padding-bottom: 50px;
-
 }
 
 @media (min-width: 768px) {
-    .form-row {
-        margin-bottom: 16px !important;
-    }
+  .form-row {
+    margin-bottom: 16px !important;
+  }
 }
 
 @media (max-width: 767px) {
-    .form-row {
-        margin-bottom: 0 !important;
-    }
+  .form-row {
+    margin-bottom: 0 !important;
+  }
 
-    .form-group {
-        margin-bottom: 16px !important;
-    }
+  .form-group {
+    margin-bottom: 16px !important;
+  }
 }
 
 .form-break {
-    height: 50px;
+  height: 50px;
 }
 
 .btn:focus {
-   outline: none !important;
-   box-shadow: none;
+  outline: none !important;
+  box-shadow: none;
 }
 
 .btn-contact-toggle {
-    background-color: #B15160;
-    border: 2px solid #9B0926;
-    color: white;
-    width: 200px;
+  background-color: #b15160;
+  border: 2px solid #9b0926;
+  color: white;
+  width: 200px;
 }
 
 @media (max-width: 375px) {
-    .btn-contact-toggle span {
-        font-size: 14px;
-    }
+  .btn-contact-toggle span {
+    font-size: 14px;
+  }
 }
 
 .btn-contact-toggle:hover {
-    background-color: #A2203A;
-    color: white;
+  background-color: #a2203a;
+  color: white;
 }
 
 .btn-contact-toggle.active {
-    background-color: #9B0926;
+  background-color: #9b0926;
 }
 
 .btn-contact-toggle:not(.active) {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .btn-contact-toggle.focus {
-    outline: none;
-    box-shadow: none;
+  outline: none;
+  box-shadow: none;
 }
 
 .form-asterisk {
-    color: #B15160;
+  color: #b15160;
 }
 
 #form-request-disclaimer {
-    font-size: 12px;
-    font-style: italic;
-    padding: 0 5px;
+  font-size: 12px;
+  font-style: italic;
+  padding: 0 5px;
 }
 
 #contact-alert {
-    display: none;
-    position: fixed;
-    z-index: 99;
-    left: 50%;
+  display: none;
+  position: fixed;
+  z-index: 99;
+  left: 50%;
 }
 
 #contact-alert-text {
-    margin-right: 52px;
+  margin-right: 52px;
 }
 
 #contact-alert button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 12px 20px;
-    color: inherit;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 12px 20px;
+  color: inherit;
 }
 
 @media (min-width: 650px) {
-    #contact-alert {
-        margin-top: 162px;
-    }
+  #contact-alert {
+    margin-top: 162px;
+  }
 }
 
 @media (max-width: 649px) {
-    #contact-alert {
-        margin-top: 133px;
-    }
+  #contact-alert {
+    margin-top: 133px;
+  }
 }
 
-input:focus, textarea:focus {
-    border-color: #848484 !important;
-    box-shadow: 0 0 0 0.2rem rgb(132 132 132 / 0.25) !important;
+input:focus,
+textarea:focus {
+  border-color: #848484 !important;
+  box-shadow: 0 0 0 0.2rem rgb(132 132 132 / 0.25) !important;
 }

@@ -1,259 +1,284 @@
 @font-face {
-    font-family: "AvenirNext-Bold";
-    src: url('../fonts/AvenirNext-Bold-01.ttf') format('ttf'),
-         url('../fonts/AvenirNext-Bold-01.woff') format('woff');
+  font-family: "AvenirNext-Bold";
+  src: url("../fonts/AvenirNext-Bold-01.ttf") format("ttf"),
+    url("../fonts/AvenirNext-Bold-01.woff") format("woff");
 }
 
 @font-face {
-    font-family: "AvenirNext-DemiBold";
-    src: url('../fonts/AvenirNext-DemiBold-03.ttf') format('ttf'),
-         url('../fonts/AvenirNext-DemiBold-03.woff') format('woff');
+  font-family: "AvenirNext-DemiBold";
+  src: url("../fonts/AvenirNext-DemiBold-03.ttf") format("ttf"),
+    url("../fonts/AvenirNext-DemiBold-03.woff") format("woff");
 }
 
 @font-face {
-    font-family: "AvenirNext-Regular";
-    src: url('../fonts/AvenirNext-Regular-08.ttf') format('ttf'),
-         url('../fonts/AvenirNext-Regular-08.woff') format('woff');
+  font-family: "AvenirNext-Regular";
+  src: url("../fonts/AvenirNext-Regular-08.ttf") format("ttf"),
+    url("../fonts/AvenirNext-Regular-08.woff") format("woff");
 }
 
 * {
-	padding: 0px;
-	margin: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
 h1 {
-    color: white;
-    font-family: "AvenirNext-Bold", sans-serif;
+  color: white;
+  font-family: "AvenirNext-Bold", sans-serif;
 }
 
-h2, h3, h4 {
-	color: black;
-	font-family: "AvenirNext-DemiBold", sans-serif;
+h2,
+h3,
+h4 {
+  color: black;
+  font-family: "AvenirNext-DemiBold", sans-serif;
 }
 
-p, span, a, label, button {
-    font-family: "AvenirNext-Regular", sans-serif;
-    font-size: 18px;
+p,
+span,
+a,
+label,
+button {
+  font-family: "AvenirNext-Regular", sans-serif;
+  font-size: 18px;
 }
 
 #hib-header {
-	background-color: #FFFFFF;
-    border-bottom: 1px solid #EAEAEA;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eaeaea;
 }
 
 #hib-header .navbar a {
-    text-decoration: none;
-    text-align: right;
+  text-decoration: none;
+  text-align: right;
 }
 
 #hib-home-bottom-buttons button {
-	width: 175px !important;
+  width: 175px !important;
 }
 
-.btn-primary{
-	background-color:#B15160;
-	border: 2px solid #9B0926;
-	color: #FFFFFF;
-	width: 175px;
+.btn-primary {
+  background-color: #b15160;
+  border: 2px solid #9b0926;
+  color: #ffffff;
+  width: 175px;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
-	background-color: #9B0926;
-	border: 2px solid #9B0926;
-	color: #FFFFFF;
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+  background-color: #9b0926;
+  border: 2px solid #9b0926;
+  color: #ffffff;
 }
 
 .btn-primary:active {
-	background-color: #9B0926 !important;
-    border: 2px solid #9B0926 !important;
-    color: #FFFFFF !important;
+  background-color: #9b0926 !important;
+  border: 2px solid #9b0926 !important;
+  color: #ffffff !important;
 }
 
 #hib-all-style {
-    background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 #hib-nav {
-	padding: 15px 0;
-    max-width: 1200px;
-    margin: 0 auto;
+  padding: 15px 0;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .navbar-nav {
-    margin: 0 0 0 auto;
+  margin: 0 0 0 auto;
 }
 
 @media (min-width: 768px) {
-    .navbar-nav :not(:last-child) {
-        margin-right: 60px;
-    }
+  .navbar-nav :not(:last-child) {
+    margin-right: 60px;
+  }
 }
 
 @media (max-width: 767px) {
-    .navbar-nav {
-        padding-top: 20px;
-    }
+  .navbar-nav {
+    padding-top: 20px;
+  }
 }
 
 #hib-nav .nav-link {
-    font-size: 18px;
-    color: #989898;
-    padding-right: 0.75rem;
+  font-size: 18px;
+  color: #989898;
+  padding-right: 0.75rem;
 }
 
 #hib-nav .nav-link.active {
-	color: #9B0926;
-    font-weight: bold;
+  color: #9b0926;
+  font-weight: bold;
 }
 
 #hib-nav .nav-link:hover {
-    color: #B15160;
+  color: #b15160;
 }
 
 .navbar-toggler,
 .navbar-toggler:focus {
-    outline: none;
-    border: none;
+  outline: none;
+  border: none;
 }
 
-#hib-home-top, #hib-products-top, #hib-contact-us-top, #wf-endorsement-banner {
-    margin-bottom: 144px;
-    text-align: center;
+#hib-home-top,
+#hib-products-top,
+#hib-contact-us-top,
+#wf-endorsement-banner {
+  margin-bottom: 144px;
+  text-align: center;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 @media (max-width: 819px) {
-    #hib-home-top h2 {
-        max-width: 540px;
-    }
+  #hib-home-top h2 {
+    max-width: 540px;
+  }
 }
 
 .hib-container div {
-	margin: 0 auto;
+  margin: 0 auto;
 }
 
-#hib-footer-container, #hib-features-banner {
-	background-color: #9B0926;
+#hib-footer-container,
+#hib-features-banner {
+  background-color: #9b0926;
 }
 
 #hib-footer {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px 0px;
-    color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0px;
+  color: white;
 }
 
 #hib-footer-left div,
 #hib-footer-center div,
 #hib-footer-right div {
-	width: 100%;
+  width: 100%;
 }
 
 #hib-footer-center {
-	text-align: center;
+  text-align: center;
 }
 
 #hib-footer-right {
-    text-align: right;
+  text-align: right;
 }
 
-#hib-footer p, #hib-footer a {
-    margin: 0;
-    font-size: 16px !important;
+#hib-footer p,
+#hib-footer a {
+  margin: 0;
+  font-size: 16px !important;
 }
 
 .hib-footer-link {
-    color: #FFFFFF;
+  color: #ffffff;
 }
 
 .hib-footer-link:hover {
-    color: #E6E6E6;
-    text-decoration: underline;
+  color: #e6e6e6;
+  text-decoration: underline;
 }
 
-.text-link, .text-link:visited {
-    color: #9B0926;
+.text-link,
+.text-link:visited {
+  color: #9b0926;
 }
 
 .text-link:hover {
-    color: #B15160;
-    text-decoration: underline;
+  color: #b15160;
+  text-decoration: underline;
 }
 
 #hib-home-bottom-buttons a:hover,
-#hib-products-bottom-buttons a:hover{
-    text-decoration: none;
+#hib-products-bottom-buttons a:hover {
+  text-decoration: none;
 }
 
 @media (max-width: 384px) {
-    #hib-home-bottom-buttons > a:nth-child(1) > button,
-    #hib-products-bottom-buttons > a:nth-child(1) > button {
-        margin-bottom: 5px;
-    }
+  #hib-home-bottom-buttons > a:nth-child(1) > button,
+  #hib-products-bottom-buttons > a:nth-child(1) > button {
+    margin-bottom: 5px;
+  }
 }
 
 @media (min-width: 630px) and (max-width: 940px) {
-    #hib-footer-left, #hib-footer-right {
-        min-width: 50%;
-    }
+  #hib-footer-left,
+  #hib-footer-right {
+    min-width: 50%;
+  }
 
-    #hib-footer-center {
-        display: none !important;
-    }
+  #hib-footer-center {
+    display: none !important;
+  }
 }
 
 @media (max-width: 629px) {
-    #hib-footer-left, #hib-footer-center, #hib-footer-right {
-        min-width: 100%;
-        text-align: center;
-    }
+  #hib-footer-left,
+  #hib-footer-center,
+  #hib-footer-right {
+    min-width: 100%;
+    text-align: center;
+  }
 
-    #hib-footer-center, #hib-footer-right {
-        margin-top: 18px;
-    }
+  #hib-footer-center,
+  #hib-footer-right {
+    margin-top: 18px;
+  }
 }
 
 #hib-logo {
-    height: 70px;
+  height: 70px;
 }
 
-#hib-home-top, #hib-products-top, #hib-contact-us-top {
-    height: calc(100vh - 100px);
-    margin-top: 100px;
+#hib-home-top,
+#hib-products-top,
+#hib-contact-us-top {
+  height: calc(100vh - 100px);
+  margin-top: 100px;
 }
 
 @media (min-width: 691px) {
-    #hib-contact-us-top h1, #hib-products-top h1 {
-        font-size: 100px;
-    }
+  #hib-contact-us-top h1,
+  #hib-products-top h1 {
+    font-size: 100px;
+  }
 }
 
 @media (min-width: 500px) and (max-width: 690px) {
-    #hib-contact-us-top h1, #hib-products-top h1 {
-        font-size: 72px;
-    }
+  #hib-contact-us-top h1,
+  #hib-products-top h1 {
+    font-size: 72px;
+  }
 }
 
 @media (max-width: 499px) {
-    #hib-contact-us-top h1, #hib-products-top h1 {
-        font-size: 48px;
-    }
+  #hib-contact-us-top h1,
+  #hib-products-top h1 {
+    font-size: 48px;
+  }
 }
 
 #hib-trademark-container {
-    background-color: #B15160;
-    padding: 10px 50px;
+  background-color: #b15160;
+  padding: 10px 50px;
 }
 
 #hib-trademark {
-    text-align: center;
-    line-height: 1;
+  text-align: center;
+  line-height: 1;
 }
 
 #hib-trademark span {
-    color: white;
-    font-size: 12px;
+  color: white;
+  font-size: 12px;
 }

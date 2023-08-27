@@ -1,407 +1,410 @@
 #hib-home {
-    padding: 0px;
+  padding: 0px;
 }
 
 #hib-home-top {
-    background-image: url('../images/background-home.jpg');
+  background-image: url("../images/background-home.jpg");
 }
-
 
 /* WF ENDORSEMENT BANNER */
 
 #wf-endorsement-banner {
-    background-image: url('../images/background-products.jpg');
-    text-align: left;
-    min-height: calc(100vh - 100px);
-    padding-top: 64px;
-    padding-bottom: 64px;
+  background-image: url("../images/background-products.jpg");
+  text-align: left;
+  min-height: calc(100vh - 100px);
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 #wf-endorsement-banner > div {
-    max-width: 1200px;
+  max-width: 1200px;
 }
 @media (max-width: 1239px) {
-    #wf-endorsement-banner > div {
-        display:flex;
-        flex-direction: column-reverse;
-        text-align: center;
-    }
+  #wf-endorsement-banner > div {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
 }
 
 #wf-endorsement-text {
-    display: flex;
-    flex-direction: column;
-    float: left;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  float: left;
+  align-items: center;
 }
 @media (min-width: 1240px) {
-    #wf-endorsement-text {
-        margin-right: 130px;
-        align-items: flex-start;
-    }
+  #wf-endorsement-text {
+    margin-right: 130px;
+    align-items: flex-start;
+  }
 }
-
 
 #wf-endorsement-banner h1,
 #wf-endorsement-banner h2 {
-    float: right;
-    width: 100%;
+  float: right;
+  width: 100%;
 }
 
 #wf-endorsement-banner h1 {
-    color: white;
-    font-size: 60px;
-    margin-bottom: 15px;
+  color: white;
+  font-size: 60px;
+  margin-bottom: 15px;
 }
 
 #wf-endorsement-banner h2 {
-    color: white;
-    font-size: 42px;
-    margin-bottom: 30px;
+  color: white;
+  font-size: 42px;
+  margin-bottom: 30px;
 }
 
 #wf-endorsement-banner h2 {
-    max-width: 650px;
+  max-width: 650px;
 }
 
-#wf-endorsement-banner p, a {
-    color: white;
-    font-size: 30px;
+#wf-endorsement-banner p,
+a {
+  color: white;
+  font-size: 30px;
 }
 
 #wf-endorsement-banner a {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 #wf-endorsement-banner a:hover {
-    color: #B15160;
+  color: #b15160;
 }
-
 
 #wf-logo-wrapper {
-    max-width: 320px;
-    float: right;
+  max-width: 320px;
+  float: right;
 }
 @media (max-width: 1239px) {
-    #wf-logo-wrapper {
-        margin-bottom: 64px;
-        max-width: 256px;
-    }
+  #wf-logo-wrapper {
+    margin-bottom: 64px;
+    max-width: 256px;
+  }
 }
 #wf-logo-wrapper img {
-    width: 100%;
+  width: 100%;
 }
-
 
 /* END WF ENDORSEMENT BANNER */
 
-
 #hib-home-top {
-    text-align: right;
+  text-align: right;
 }
 
 #hib-home-top > div {
-    max-width: 1200px;
-    margin-right: 105px;
+  max-width: 1200px;
+  margin-right: 105px;
 }
 
 #hib-home-top h1,
 #hib-home-top h2 {
-    float: right;
-    width: 100%;
+  float: right;
+  width: 100%;
 }
 
 #hib-home-top h1 {
-    color: white;
-    font-size: 60px;
-    margin-bottom: 15px;
+  color: white;
+  font-size: 60px;
+  margin-bottom: 15px;
 }
 
 #hib-home-top h2 {
-    color: white;
-    font-size: 42px;
-    margin-bottom: 30px;
+  color: white;
+  font-size: 42px;
+  margin-bottom: 30px;
 }
 
 @media (min-width: 820px) {
-    #hib-home-top h2 {
-        width: 480px;
-    }
+  #hib-home-top h2 {
+    width: 480px;
+  }
 }
 
 @media (max-width: 819px) {
-    #hib-home-top, #wf-endorsement-banner {
-        text-align: center;
-    }
+  #hib-home-top,
+  #wf-endorsement-banner {
+    text-align: center;
+  }
 
-    #hib-home-top h2,
-    #wf-endorsement-banner h2 {
-        font-size: 36px;
-    }
+  #hib-home-top h2,
+  #wf-endorsement-banner h2 {
+    font-size: 36px;
+  }
 
-    #hib-home-top h1, #hib-home-top h2, #hib-home-top a {
-        float: none !important;
-    }
+  #hib-home-top h1,
+  #hib-home-top h2,
+  #hib-home-top a {
+    float: none !important;
+  }
 
-    #hib-home-top > div {
-        margin: 30px auto 0 auto;
-    }
+  #hib-home-top > div {
+    margin: 30px auto 0 auto;
+  }
 }
 
 @media (max-width: 415px) {
-    #hib-home-top h1,
-    #wf-endorsement-banner h1 {
-        font-size: 48px;
-    }
+  #hib-home-top h1,
+  #wf-endorsement-banner h1 {
+    font-size: 48px;
+  }
 
-    #hib-home-top h2,
-    #wf-endorsement-banner h2 {
-        font-size: 30px;
-    }
+  #hib-home-top h2,
+  #wf-endorsement-banner h2 {
+    font-size: 30px;
+  }
 }
 
 #hib-home-top a {
-    float: right;
+  float: right;
 }
 
 #hib-home-description {
-    margin-bottom: 144px;
-    max-width: 1200px;
+  margin-bottom: 144px;
+  max-width: 1200px;
 }
 
 #hib-home-description div p span {
-    font-weight: bold;
-    color: #9B0926;
+  font-weight: bold;
+  color: #9b0926;
 }
 
 @media (min-width: 675px) {
-    #hib-home-description > div:nth-child(1) {
-        padding-right: 50px;
-    }
+  #hib-home-description > div:nth-child(1) {
+    padding-right: 50px;
+  }
 }
 
 #hib-home-description > div:nth-child(1) > p,
 #hib-home-description > div:nth-child(1) > p > span {
-    margin: 0;
+  margin: 0;
 }
 
 #hib-home-description > div:nth-child(2) {
-    max-width: 500px;
+  max-width: 500px;
 }
 
 #hib-home-description > div:nth-child(2) > img {
-    width: 100%;
+  width: 100%;
 }
 
 @media (min-width: 1150px) {
-    #hib-home-description > div:nth-child(1) > p,
-    #hib-home-description > div:nth-child(1) > p > span {
-        font-size: 30px;
-    }
+  #hib-home-description > div:nth-child(1) > p,
+  #hib-home-description > div:nth-child(1) > p > span {
+    font-size: 30px;
+  }
 }
 
 @media (min-width: 1000px) and (max-width: 1149px) {
-    #hib-home-description > div:nth-child(1) > p,
-    #hib-home-description > div:nth-child(1) > p > span,
-    #wf-endorsement-banner p, a {
-        font-size: 24px;
-    }
+  #hib-home-description > div:nth-child(1) > p,
+  #hib-home-description > div:nth-child(1) > p > span,
+  #wf-endorsement-banner p,
+  a {
+    font-size: 24px;
+  }
 }
 
 @media (min-width: 850px) and (max-width: 999px) {
-    #hib-home-description > div:nth-child(1) > p,
-    #hib-home-description > div:nth-child(1) > p > span,
-    #wf-endorsement-banner p, a {
-        font-size: 20px;
-    }
+  #hib-home-description > div:nth-child(1) > p,
+  #hib-home-description > div:nth-child(1) > p > span,
+  #wf-endorsement-banner p,
+  a {
+    font-size: 20px;
+  }
 }
 
 @media (max-width: 849px) {
-    #hib-home-description > div:nth-child(1) > p,
-    #hib-home-description > div:nth-child(1) > p > span,
-    #wf-endorsement-banner p, a {
-        font-size: 18px;
-    }
+  #hib-home-description > div:nth-child(1) > p,
+  #hib-home-description > div:nth-child(1) > p > span,
+  #wf-endorsement-banner p,
+  a {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 675px) {
-    #hib-home-description > div:nth-child(1),
-    #wf-endorsement-banner p, a {
-        text-align: center;
-    }
+  #hib-home-description > div:nth-child(1),
+  #wf-endorsement-banner p,
+  a {
+    text-align: center;
+  }
 
-    #hib-home-description > div:nth-child(2) {
-        display: none !important;
-    }
+  #hib-home-description > div:nth-child(2) {
+    display: none !important;
+  }
 }
 
 #hib-home-features-title {
-    color: #9b0926;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 30px;
+  color: #9b0926;
+  text-align: center;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 #hib-home-features {
-    margin: 0 auto 100px auto;
-    max-width: 1000px;
-    font-size: 18px;
+  margin: 0 auto 100px auto;
+  max-width: 1000px;
+  font-size: 18px;
 }
 
 .calyx-icon {
-    height: 20px;
-    float: left;
-    padding-right: 5px;
-    margin-top: 2px;
+  height: 20px;
+  float: left;
+  padding-right: 5px;
+  margin-top: 2px;
 }
 
 #hib-home-bottom {
-    text-align: center;
-    margin-bottom: 144px;
+  text-align: center;
+  margin-bottom: 144px;
 }
 
 #hib-home-bottom-buttons button {
-    width: 150px;
+  width: 150px;
 }
 
 #hib-home-bottom-text {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* Home Page - Use Cases Section */
 
 #hib-home-use-cases {
-    margin: 144px 0;
-    padding: 100px 50px;
-    background-color: #B15160;
+  margin: 144px 0;
+  padding: 100px 50px;
+  background-color: #b15160;
 }
 
 #hib-home-use-cases > .col {
-    max-width: 900px;
+  max-width: 900px;
 }
 
 #hib-home-use-cases h1 {
-    color: white;
+  color: white;
 }
 
 #hib-home-use-cases .icon {
-    text-align: center;
+  text-align: center;
 }
 
 #hib-home-use-cases .icon > span > i {
-    font-size: 68px;
-    color: #9B0926;
+  font-size: 68px;
+  color: #9b0926;
 }
 
 #logo-text {
-    color: black;
-    margin-top: 12px;
-    text-align: center;
-    font-family: "AvenirNext-DemiBold", sans-serif !important;
-    width: 100%;
+  color: black;
+  margin-top: 12px;
+  text-align: center;
+  font-family: "AvenirNext-DemiBold", sans-serif !important;
+  width: 100%;
 }
 
 #hib-features-banner {
-    /* margin-bottom: 144px; */
-    padding: 50px 16px;
+  /* margin-bottom: 144px; */
+  padding: 50px 16px;
 }
 
 #hib-features-banner .contents {
-    margin: 0 auto;
-    max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 #hib-home-features {
-    padding: 0 16px;
+  padding: 0 16px;
 }
 
 #hib-food-applications {
-    margin-bottom: 144px;
-    text-align: center;
+  margin-bottom: 144px;
+  text-align: center;
 }
 
 #hib-food-applications h1 {
-    color: #9B0926;
-    margin: 0 auto 30px auto;
+  color: #9b0926;
+  margin: 0 auto 30px auto;
 }
 
 #hib-food-applications .col {
-    padding: 0;
+  padding: 0;
 }
 
 #hib-food-applications .col > .row > .col {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 144px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 144px 0;
 }
 
 #hib-food-applications h3 {
-    font-size: 36px;
-    color: white;
-    padding: 0 8px;
+  font-size: 36px;
+  color: white;
+  padding: 0 8px;
 }
 
 #hib-food-applications .col > .row > .col:nth-child(1) {
-    background-image: url("../images/beverages_v2.jpg");
+  background-image: url("../images/beverages_v2.jpg");
 }
 
 #hib-food-applications .col > .row > .col:nth-child(2) {
-    background-image: url("../images/frozen-dessert_v2.jpg");
+  background-image: url("../images/frozen-dessert_v2.jpg");
 }
 
 #hib-food-applications .col > .row > .col:nth-child(3) {
-    background-image: url("../images/yogurt_v2.jpg");
+  background-image: url("../images/yogurt_v2.jpg");
 }
 
 #hib-food-applications .col > .row > .col:nth-child(4) {
-    background-image: url("../images/cocktails_v2.jpg");
+  background-image: url("../images/cocktails_v2.jpg");
 }
 
 #hib-food-applications .col > .row > .col:nth-child(5) {
-    background-image: url("../images/supplements_v2.jpg");
+  background-image: url("../images/supplements_v2.jpg");
 }
 
 #hib-features-banner .contents {
-    display: grid;
+  display: grid;
 }
 
 #hib-features-banner img {
-    height: 80px;
-    margin: 0 auto;
+  height: 80px;
+  margin: 0 auto;
 }
 
 @media (min-width: 801px) {
-    #hib-features-banner .contents {
-        grid-template-columns: repeat(8, 1fr);
-    }
+  #hib-features-banner .contents {
+    grid-template-columns: repeat(8, 1fr);
+  }
 }
 
 @media (min-width: 351px) and (max-width: 800px) {
-    #hib-features-banner .contents {
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-    }
+  #hib-features-banner .contents {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 
-    #hib-features-banner img:nth-child(1),
-    #hib-features-banner img:nth-child(2),
-    #hib-features-banner img:nth-child(3),
-    #hib-features-banner img:nth-child(4) {
-        margin-bottom: 16px;
-    }
+  #hib-features-banner img:nth-child(1),
+  #hib-features-banner img:nth-child(2),
+  #hib-features-banner img:nth-child(3),
+  #hib-features-banner img:nth-child(4) {
+    margin-bottom: 16px;
+  }
 }
 
 @media (max-width: 350px) {
-    #hib-features-banner .contents {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-    }
+  #hib-features-banner .contents {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
 
-    #hib-features-banner img:nth-child(1),
-    #hib-features-banner img:nth-child(2),
-    #hib-features-banner img:nth-child(3),
-    #hib-features-banner img:nth-child(4),
-    #hib-features-banner img:nth-child(5),
-    #hib-features-banner img:nth-child(6) {
-        margin-bottom: 16px;
-    }
+  #hib-features-banner img:nth-child(1),
+  #hib-features-banner img:nth-child(2),
+  #hib-features-banner img:nth-child(3),
+  #hib-features-banner img:nth-child(4),
+  #hib-features-banner img:nth-child(5),
+  #hib-features-banner img:nth-child(6) {
+    margin-bottom: 16px;
+  }
 }

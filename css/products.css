@@ -1,128 +1,128 @@
 h1 {
-    color: white;
+  color: white;
 }
 
 .hib-container {
-	padding: 0px;
+  padding: 0px;
 }
 
 #hib-products-top {
-    background-image: url('../images/background-products.jpg');
+  background-image: url("../images/background-products.jpg");
 }
 
 #hib-products-top h1 {
-	position:relative;
-	top: 50%;
-	transform: translateY(-50%);
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #hib-products-bottom-buttons button {
-	width: 175px !important;
+  width: 175px !important;
 }
 
 #hib-products-descriptions {
-	max-width: 1200px;
-	text-align: center;
-	margin-bottom: 144px;
+  max-width: 1200px;
+  text-align: center;
+  margin-bottom: 144px;
 }
 
 .hib-powder-descriptions-image,
 .hib-liquid-descriptions-image {
-	overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 @media (min-width: 768px) {
-    .hib-powder-descriptions-image img,
-    .hib-liquid-descriptions-image img {
-        width: 100%;
-    }
+  .hib-powder-descriptions-image img,
+  .hib-liquid-descriptions-image img {
+    width: 100%;
+  }
 
-    .hib-powder-descriptions-image img {
-        padding-left: 48px;
-    }
+  .hib-powder-descriptions-image img {
+    padding-left: 48px;
+  }
 
-    .hib-liquid-descriptions-image img {
-        padding-right: 48px;
-    }
+  .hib-liquid-descriptions-image img {
+    padding-right: 48px;
+  }
 }
 
 @media (min-width: 400px) and (max-width: 767px) {
-    .hib-powder-descriptions-image img,
-    .hib-liquid-descriptions-image img {
-        width: 50%;
-        padding: 0;
-    }
+  .hib-powder-descriptions-image img,
+  .hib-liquid-descriptions-image img {
+    width: 50%;
+    padding: 0;
+  }
 }
 
 @media (max-width: 399px) {
-    .hib-powder-descriptions-image img,
-    .hib-liquid-descriptions-image img {
-        width: 100%;
-        padding: 0;
-    }
+  .hib-powder-descriptions-image img,
+  .hib-liquid-descriptions-image img {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 #hib-products-descriptions h2 {
-    margin-bottom: 0;
-    color: #9b0926;
+  margin-bottom: 0;
+  color: #9b0926;
 }
 
 #hib-products-descriptions h4 {
-    margin-top: 4px;
-    color: #b15160;
+  margin-top: 4px;
+  color: #b15160;
 }
 
 @media (min-width: 768px) {
-    #hib-products-descriptions .titles {
-        text-align: left;
-        margin-bottom: 24px;
-    }
+  #hib-products-descriptions .titles {
+    text-align: left;
+    margin-bottom: 24px;
+  }
 }
 
 @media (max-width: 767px) {
-    #hib-products-descriptions h2 {
-        margin-top: 30px;
-    }
+  #hib-products-descriptions h2 {
+    margin-top: 30px;
+  }
 
-    #hib-products-descriptions .titles {
-        text-align: center;
-        margin-bottom: 16px;
-    }
+  #hib-products-descriptions .titles {
+    text-align: center;
+    margin-bottom: 16px;
+  }
 }
 
 #hib-products-bottom {
-    text-align: center;
-    margin-bottom: 144px;
+  text-align: center;
+  margin-bottom: 144px;
 }
 
 #hib-products-bottom-buttons button {
-    width: 150px;
+  width: 150px;
 }
 
 #hib-products-bottom-text {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 #hib-products-descriptions .row .col-md-7 p {
-    text-align: left;
+  text-align: left;
 }
 
 #hib-products-descriptions > .row:nth-child(1) {
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 .calyx-icon {
-    height: 20px;
-    float: left;
-    padding-right: 5px;
-    margin-top: 2px;
+  height: 20px;
+  float: left;
+  padding-right: 5px;
+  margin-top: 2px;
 }
 
 #powder-description-grid > .col-sm-6,
 #powder-description-grid > .col-sm-6 .col-1 {
-    padding: 0 !important;
+  padding: 0 !important;
 }
 
 #powder-description-grid > .col-sm-6 .col {
-    padding: 0 24px 0 12px;
+  padding: 0 24px 0 12px;
 }
