@@ -267,18 +267,3 @@ button {
     font-size: 48px;
   }
 }
-
-#hib-trademark-container {
-  background-color: #b15160;
-  padding: 10px 50px;
-}
-
-#hib-trademark {
-  text-align: center;
-  line-height: 1;
-}
-
-#hib-trademark span {
-  color: white;
-  font-size: 12px;
-}

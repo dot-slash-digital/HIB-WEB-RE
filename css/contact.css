@@ -3,7 +3,7 @@
 }
 
 #hib-contact-us-top {
-  background-image: url("../images/background-contact_v2.jpg");
+  background-image: url("../images/background-contact.jpg");
 }
 
 #hib-contact-us-top h1 {
@@ -13,7 +13,7 @@
 }
 
 #hib-contact-us-about {
-  max-width: 700px;
+  max-width: 750px;
   text-align: center;
   margin-bottom: 144px;
 }
